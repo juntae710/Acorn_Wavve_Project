@@ -1,0 +1,138 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/*전체 영역*/
+
+.jj_wrap {
+    width: 1240px;
+    height: 498px;
+    background-color: #1b1b1b;
+    margin: 0 auto;
+}
+
+/*타이틀 영역*/
+.jj_wrap_title {
+    width: 1240px;
+    height: 36px;
+    margin: 0px 0px 20px;
+    display: flex;
+    position: relative;
+}
+
+/*타이틀이름*/
+.jj_wrap_title_name {
+    color: #fff;
+    font-size: 24px;
+    line-height: 36px;
+}
+
+/*더보기*/
+.jj_wrap_more {
+    position: absolute;
+    top: 7px;
+    right: 0;
+    padding: 5px 20px 5px 0;
+
+}
+
+/*더보기 a태그*/
+.jj_wrap_more a {
+    font-size: 16px;
+    line-height: 24px;
+    color: #a5a5a5;
+    background-size: 16px auto;
+    text-decoration: none;
+}
+
+/*이미지영역*/
+.jj_info {
+    width: 1240px;
+    height: 440px;
+    margin: 0 auto;
+    overflow: hidden;
+    position: relative;
+}
+
+/*이미지영역 크게 잡아서 기존 크기보다 넘어가게 만들기*/
+.jj_infoBox {
+    width: 2480px;
+    height: 400px;
+    display: flex;
+    transition: transform 0.5s ease;
+}
+
+/*이미지 크기*/
+.jj_infoBox_img {
+    width: 240px;
+    height: 360px;
+    margin-right: 10px;
+    border-radius: 10px;
+    overflow: hidden;
+
+
+}
+
+/*이미지를 이미지 크기영역의 크기에 100%로 맞추고 */
+.jj_infoBox_img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transform: scale(1);
+    transition: transform 0.3s ease;
+
+}
+
+/*마우스가 올라가면 커짐*/
+.jj_infoBox_img img:hover {
+    transform: scale(1.09);
+}
+
+
+
+/*버튼*/
+.jj_prev-btn,
+.jj_next-btn {
+    position: absolute;
+    width: 30px;
+    height: 50px;
+    top: 150px;
+    padding: 5px 5px;
+    cursor: pointer;
+    z-index: 1;
+    /*버튼 요소들이 다른 요소들보다 위에 표시*/
+    transition: left 0.5s ease, right 0.5s ease;
+    font-size: 30px;
+    line-height: 50px;
+    text-align: center;
+    color: #fff;
+    background-color: #1b1b1b69;
+
+}
+
+.jj_prev-btn {
+    left: -50px;
+}
+
+.jj_next-btn {
+    right: -50px;
+}
+
+.jj_nextPrev {
+    opacity: 0.5;
+    /*마우스 이벤트를 비활성화시키는 역할*/
+    pointer-events: none;
+}
+
+.jj_bar{
+    width: 100%;
+    background-color: #18479f;
+    text-align: center;
+    height: 96px;
+    
+}
+.jj_bar img{
+  
+    
+}

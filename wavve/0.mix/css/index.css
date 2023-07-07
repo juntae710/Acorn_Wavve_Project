@@ -1,6 +1,7 @@
 *{
     margin: 0;
     padding: 0;
+    background-color: #1b1b1b;
    
 }
 .indexheader{
@@ -11,17 +12,17 @@
 .indexsection{
     width: 100%;
     /* height: 1200px; */
-    border: 1px solid black;
+    /* border: 1px solid black; */
 }
 .indexdiv1{
     width: 100%;
     /* height: 20%; */
-    border: 1px solid black;
+    /* border: 1px solid black; */
 }
 .indexdiv2{
     width: 100%;
-    height: 1000px;
-    border: 1px solid black;
+    /* height: 1000px; */
+    /* border: 1px solid black; */
 }
 .indexfooter{
     width: 100%;
