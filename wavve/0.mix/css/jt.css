@@ -1,0 +1,115 @@
+*{
+      
+    padding: 0;
+    margin: 0;
+  }
+  .jt_전체{
+    
+    width: 100%;
+    /* height: 1000px; */
+    background-color:  #1b1b1b;
+  }
+  .jt_header{
+    background-color:  white;
+    width: 100%;
+    /* height: 150px; */
+  }
+  .jt_화면 {
+    width: 100%;
+    /* height: 700px; */
+    /* border: 0.5px solid black; */
+    
+    background-color: #1b1b1b;
+    overflow: hidden;
+    position: relative;
+    /* margin-top: 50px; */
+    position: relative;
+    /* min-width: 1240px; */
+    max-width: 3840px;
+    margin: 0 auto;
+  }
+
+  .jt_박스 {
+    width: 11320px;
+    height: 510px;
+    /* border: 0.5px solid black; */
+    display: flex;
+    transition: transform 0.5s ease;
+    margin: 0 auto;
+  }
+  .jt_점{
+    width: 90px;
+    height: 30px;
+    background-color: white;
+    margin: 20px auto 0px;
+    display: flex;
+  }
+  
+  .jt_img:not(:last-child) {
+    width: 1240px;
+    height: 505px;
+    border: 0.5px solid black;
+    margin-right: 20px ;
+    border-radius: 10px;
+    
+  }
+  .jt_img img {
+    border-radius: 10px;
+    
+  }
+  .jt_prev-btn,
+  .jt_next-btn {
+    position: absolute;
+    top: 40%;
+    transform: translateY(-50%);
+    /* background-color: lightgray; */
+    padding: 10px;
+    cursor: pointer;
+    z-index: 1;
+    opacity: 0.7;
+  }
+
+  
+  .jt_prev-btn {
+    left: 150px;
+  }
+  .jt_prev-btn:hover {
+    opacity: 1;
+  }
+
+  .jt_prev-btn::after {
+      position: absolute;
+      left: 0; 
+      top: 0; 
+      content: '';
+      width: 45px; /* 사이즈 */
+      height: 45px; /* 사이즈 */
+      border-top: 7px solid white; /* 선 두께 */
+      border-right: 7px solid white; /* 선 두께 */  
+      transform: rotate(225deg); /* 각도 */
+      border-radius: 5px;
+      
+     
+  }
+  
+  .jt_next-btn {
+    right: 150px;
+  }
+
+  .jt_next-btn::after {
+      position: absolute;
+      left: 0; 
+      top: 0; 
+      content: '';
+      width: 45px; /* 사이즈 */
+      height: 45px; /* 사이즈 */
+      border-top: 7px solid white; /* 선 두께 */
+      border-right: 7px solid white; /* 선 두께 */
+      transform: rotate(45deg); /* 각도 */
+      
+      border-radius: 5px;
+      
+  }
+  .jt_next-btn:hover {
+    opacity: 1;
+  }
