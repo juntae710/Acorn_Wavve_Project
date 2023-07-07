@@ -1,31 +1,30 @@
 *{
     margin: 0;
     padding: 0;
-    background-color: #1b1b1b;
+    
    
 }
 .indexheader{
     width: 100%;
     height: 200px;
     border: 1px solid black;
+    background-color: #1b1b1b;
 }
 .indexsection{
     width: 100%;
     /* height: 1200px; */
     /* border: 1px solid black; */
+    background-color: #1b1b1b;
 }
 .indexdiv1{
     width: 100%;
     /* height: 20%; */
     /* border: 1px solid black; */
+    background-color: #1b1b1b;
 }
 .indexdiv2{
     width: 100%;
     /* height: 1000px; */
     /* border: 1px solid black; */
-}
-.indexfooter{
-    width: 100%;
-    height: 200px;
-    border: 1px solid black;
+    background-color: #1b1b1b;
 }
