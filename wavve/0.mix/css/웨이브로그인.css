@@ -54,7 +54,10 @@ footer{
     height: 320px;
     margin: 0 auto;
     background-color: #252525;
+
     border: 1px solid #252525;
+
+    
     padding: 40px;
 }
 
@@ -86,7 +89,10 @@ footer{
 
 .ul_checkbox_wrap{
     background-color: #252525;
+
     border: 1px solid #252525;
+
+    
     height: 35px;
 }
 
@@ -141,7 +147,10 @@ li{
     height: 30px;
     margin: 20px auto 50px;
     background-color: #252525;
+
     border: 1px solid #252525;
+
+    
     justify-content: center;
 }
 
@@ -187,7 +196,10 @@ img{
     margin: 0 auto;
     margin-top: 20px;
     margin-bottom: 20px;
+
     border: 1px solid #252525;
+
+    
     text-align: center;
 }
 
