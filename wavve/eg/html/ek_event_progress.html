@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    <style>
+        *{
+            padding: 0px;
+            margin: 0px;
+        }
+        a{
+            text-decoration: none;
+        }
+
+        /* 이벤트 페이지 탑 */
+        .ek_event_top{
+            background-color: #252525;
+            color: white;
+            font-size: 20px;
+            text-align: center;
+            padding: 50px;
+        }
+        .ek_event_top img{
+            width: 70px;
+            height: 70px;
+            margin-bottom: 8px;
+        }
+
+
+        /* 이벤트 페이지 메뉴 */
+        .ek_event_menu_wrap{
+            background-color: #1b1b1b;
+            border-bottom: 1px solid #2f2f2f;
+        }
+        .ek_event_menu_div{
+            width: 80%;
+            margin: 0 auto;
+            display: flex;
+            justify-content: left;
+            align-items: center;
+        }
+        .ek_event_menu{
+            padding: 10px;
+            margin: 20px;
+            font-size: 18px;
+            font-weight: 600;
+            cursor: pointer;
+        }
+        .ek_event_menu_1{
+            border-bottom: 4px solid #1351f9;
+        }
+        .ek_event_menu_2{
+            border-bottom : 0px;
+        }
+        .ek_event_menu_a1{
+            color: white;
+        }
+        .ek_event_menu_a2{
+            color: #a5a5a5;
+        }
+
+        /* 이벤트 페이지 항목 */
+        .ek_event_content_wrap{
+            background-color: #1b1b1b;
+            border-bottom: 1px solid #2f2f2f;            
+        }
+        .ek_event_content{
+            width: 1350px;
+            margin: 0 auto;
+            padding: 10px;
+            padding-top: 50px;
+        }
+        .ek_event_content ul{
+            display: flex;
+            justify-content: center;
+        }
+        .ek_event_content li{
+            list-style: none;
+            padding: 20px 0px 20px 0px;
+            border-bottom: 1px solid  #2f2f2f;  
+        }
+        .ek_event_content li a{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .ek_event_content_img{
+            width: 260px;
+            height: 140px;
+            margin-right: 20px;
+            border-radius: 10px;
+            overflow: hidden;
+        }
+        .ek_event_content_text{
+            width: 360px;
+            padding-right: 20px;
+            display: flex;
+            flex-direction: column;
+        }
+        .ek_event_content_text span{
+            color: #717171;
+            font-size: 16px;
+            margin-bottom: 15px;
+            width: 100%; 
+        }
+        .ek_event_content_text_story{
+            white-space: nowrap; /* 줄바꿈 안함 */
+            overflow: hidden;
+            text-overflow: clip; /* 잘린내용 보이지 않기 */
+            text-overflow: ellipsis; /* 잘린내용 ...표시 */
+        }
+        .ek_event_content_text span h3{
+            color: #a5a5a5;
+            font-size: 20px;
+        }
+        .ek_event_content_text span strong{
+            color: #a5a5a5;
+            font-size: 15px;
+            padding-right: 10px;
+        }
+        .ek_event_content_btnGroup{
+            display: flex;
+            justify-content: center;
+            height: 200px;
+        }
+        .ek_event_content_btn{
+            background-color: transparent;
+            width: 30px;
+            height: 30px;
+            color: #a5a5a5;
+            font-size: 14px;
+            font-weight: 600;
+            display: block;
+            text-align: center;
+            line-height: 29px;
+            margin-top: 20px;
+            margin-left: 10px;
+        }
+        .ek_btn_click{
+            border: 1px solid white;
+            border-radius: 50%;
+            color: white;
+        }
+
+
+    </style>
+</head>
+<body>
+    <div class="ek_wrap">
+        <!-- 이벤트 페이지 탑 -->
+        <section class="ek_event_top">
+            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEgAAABJCAYAAACesWDiAAAAAXNSR0IArs4c6QAAAoJJREFUeAHtmrFuE1EQRW0rUgoURUpFh5S/MIU/IUUaiuQH7BIKcMEfIJqQIuR/QuXkGygiUVEgIpqQx73rN5ZZ7ePKWF7tSnekq/GbeW935+TaUSIPBo5uEEgpzaBb6Ad0B51DQ/V03JP38gzP8hozda5XfQz0DmqKKxSLkNiDuKcp3vYKwr8eFtPd5wnPkA+gVxDdwLgonUXvU7VjuZdneJbXYNyXzvWujmEeq5FSOoyHx3oC/cr1edQjoz7PPe6ZrNUPc/0xar3PGGiRh/rrswO1U+h37k1jUKynucbeadSZseZnGWOxXu/1awxzUo2U0k/k8fowWAcMbnmTxdeMFTSewXoM8RqMk/Xr9P41BrquxkrpAfk9dAztQ8+gD1A9WGOPe7iXZ3iW8bn3QOoDYKgRdMnptgxeY1S//q7WxV+xu7ohhuNb7DX0EjqCnqBv0FfoO8Rg/QX0HCIM1m+gj8Ph8AuyoysEVg6i7bvyUF14Dji1YtPae7kLQ//PM+zVDwW5er2Ndbi4C88Q89pBQaKQDagAJsoGFCQK2YAKYKJsQEGikA2oACbKBhQkCtmACmCibEBBopANqAAmygYUJArZgApgoux/dwSJWo4/mO2gGpiNlvz3A2OjQ1tsXt6tW/ezg8QP1IAMSBAQbTvIgAQB0baDDEgQEG07yIAEAdG2gwxIEBBtO8iABAHRtoMMSBAQbTvIgAQB0baDDEgQEG07yIAEAdG2gwxIEBBtO8iABAHRtoMMSBAQbTvIgAQB0baDDEgQEG07yIAEAdG2gwxIEBBtO8iABAHRtoMMSBAQ7dU37Zv2tfkd6ab7t1WLb9U33c9vsSYqrpmACbRF4A95/A2w2JQ+SgAAAABJRU5ErkJggg==">
+            <h2>Wavve의 다양한 이벤트를 만나보세요.</h2>
+        </section>
+
+        <!-- 이벤트 페이지 메뉴 -->
+        <section class="ek_event_menu_wrap">
+            <div class="ek_event_menu_div">
+                <div class="ek_event_menu event_menu_1"> 
+                    <a class="ek_event_menu_a1" href="ek_event_progress.html"> 진행중 이벤트 </a>
+                </div>
+                <div class="ek_event_menu event_menu_2"> 
+                    <a class="ek_event_menu_a2" href="ek_event_ending.html">당첨자 발표 </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- 이벤트 페이지 항목 -->
+        <section class="ek_event_content_wrap">
+            <div class="ek_event_content">
+                <ul>
+                    <li>
+                        <a href="https://www.wavve.com/customer/event_view?eventId=707&prevPage=1">
+                            <div class="ek_event_content_img">
+                                <img src="https://image.wavve.com/v1/thumbnails/260_147_20_80/service30/event/2023/20230628_event_101428.webp">
+                            </div>
+                            <div class="ek_event_content_text">
+                                <span><h3><그 여름> 론칭 프로모션</h3></span>
+                                <span><strong>기간</strong> 2023-06-28 ~ 2023-07-18</span>
+                                <span class="ek_event_content_text_story"><strong>경품</strong> 원작 최은영 작가 내게 무해한 사람 도서 10명 / 오리지널 티셔츠 30명</span>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.wavve.com/customer/event_view?eventId=706&prevPage=1">
+                            <div class="ek_event_content_img">
+                                <img src="https://image.wavve.com/v1/thumbnails/260_147_20_80/service30/event/2023/20230622_event_100252.webp">
+                            </div>
+                            <div class="ek_event_content_text">
+                                <span><h3><블랙워터: 어비스> 론칭 프로모션 </h3></span>
+                                <span><strong>기간</strong> 2023-06-22 ~ 2023-07-05</span>
+                                <span><strong>경품</strong> 네이버 페이 포인트 3만원 상품권 </span>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="ek_event_content_btnGroup">
+                <a href="" class="ek_event_content_btn  ek_btn_click">1</a>
+            </div>
+           
+
+        </section>
+    </div>
+</body>
+</html>
