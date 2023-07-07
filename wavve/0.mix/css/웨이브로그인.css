@@ -18,7 +18,7 @@ section{
 }
 
 .loginbox{
-    border: 1px solid #252525;
+    border: 1px solid white;
     width: 530px;
     height: 700px;
     margin: 0 auto;
@@ -28,10 +28,10 @@ section{
 
 .login_member_layout{
     width: 530px;
-    height: 740px;
+    height: 700px;
     margin: 0 auto;
     background-color: #252525;
-    border: 1px solid #252525;
+    border: 1px solid white;
 }
 
 footer{
@@ -44,7 +44,7 @@ footer{
     color: white;
     text-align: center;
     background-color: #252525;
-    margin: 40px 0 40px;
+    margin: 0 0 40px;
     font-weight: 400;
     font-size: 32px;
 }
@@ -54,21 +54,7 @@ footer{
     height: 320px;
     margin: 0 auto;
     background-color: #252525;
-<<<<<<< HEAD
-<<<<<<< HEAD
-    border: 1px solid #252525;
-=======
-
-    border: 1px solid #252525;
-
-    
->>>>>>> ca151b5b5b686f618f04e1e7efbaa78ab52281cc
-=======
-
-    border: 1px solid #252525;
-
-    
->>>>>>> e5483d301802af14e18153bf2d29e159922ecc1f
+    border: 1px solid yellow;
     padding: 40px;
 }
 
@@ -100,21 +86,7 @@ footer{
 
 .ul_checkbox_wrap{
     background-color: #252525;
-<<<<<<< HEAD
-<<<<<<< HEAD
-    border: 1px solid #252525;
-=======
-
-    border: 1px solid #252525;
-
-    
->>>>>>> ca151b5b5b686f618f04e1e7efbaa78ab52281cc
-=======
-
-    border: 1px solid #252525;
-
-    
->>>>>>> e5483d301802af14e18153bf2d29e159922ecc1f
+    border: 1px solid red;
     height: 35px;
 }
 
@@ -169,21 +141,7 @@ li{
     height: 30px;
     margin: 20px auto 50px;
     background-color: #252525;
-<<<<<<< HEAD
-<<<<<<< HEAD
-    border: 1px solid #252525;
-=======
-
-    border: 1px solid #252525;
-
-    
->>>>>>> ca151b5b5b686f618f04e1e7efbaa78ab52281cc
-=======
-
-    border: 1px solid #252525;
-
-    
->>>>>>> e5483d301802af14e18153bf2d29e159922ecc1f
+    border: 1px solid skyblue;
     justify-content: center;
 }
 
@@ -229,21 +187,7 @@ img{
     margin: 0 auto;
     margin-top: 20px;
     margin-bottom: 20px;
-<<<<<<< HEAD
-<<<<<<< HEAD
-    border: 1px solid #252525;
-=======
-
-    border: 1px solid #252525;
-
-    
->>>>>>> ca151b5b5b686f618f04e1e7efbaa78ab52281cc
-=======
-
-    border: 1px solid #252525;
-
-    
->>>>>>> e5483d301802af14e18153bf2d29e159922ecc1f
+    border: 1px solid yellow;
     text-align: center;
 }
 

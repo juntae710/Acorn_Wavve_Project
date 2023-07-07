@@ -6,6 +6,11 @@
 header {
     width: 100%;
     background-color: #1b1b1b;
+
+    z-index: 3;
+    position: fixed;
+
+
 }
 
 .JawHwa-header-rap {
