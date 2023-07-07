@@ -1,0 +1,495 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+        }
+        
+        /* 이용권 상단 영역 */
+        .ek_page_top{
+            background-color: #252525;
+            padding: 30px 10%; 
+            width: 100%;
+            position: fixed;
+            top: 0px;
+            height: 50px;
+            z-index: 2;
+            
+        }
+        .ek_page_top h1{
+            color: white;
+            font-size: 24px;
+            font-weight: 400;
+        }
+        .ek_page_top h2{
+            color: #a5a5a5;
+            font-size: 16px;
+        }
+
+
+
+        /* 이용권 배너 영역 */
+        .ek_page_voucher{
+            background-color: #3468F2;
+            text-align: center;
+            width: 100%;
+            margin-top: 110px;
+             position: relative;
+        }
+        .ek_page_voucher_banner{
+            height: 110px;
+            overflow: hidden;
+        }
+        .ek_page_voucher a img{
+            width: 1024px;
+            height: 300px;
+        }
+        .ek_page_voucher button{
+            width: 40px;
+            height: 40px;
+            background-color: transparent;
+            border: 0px;
+            background-image: url("https://www.wavve.com/img/element-icons-40-x-40-all-dropdown-arrow.1dbee09a.svg");
+            background-position: center;
+            background-size: cover;
+            position: absolute;
+            left: 50%;
+            bottom: -40px;
+        }
+
+
+
+
+        /* 이용권 웨이브/제휴 영역 */
+        .ek_page_icon{
+            display: flex;
+            justify-content: center;
+            padding: 70px 0px 50px 0px; 
+            background-color: #1b1b1b;
+        }
+        .ek_page_icon a{ 
+            text-align: center;
+            font-size: 20px;
+            color: #a5a5a5;
+            text-decoration : none;
+            cursor: pointer;
+            padding: 0 20px;
+        }
+        .ek_page_icon_wavve{
+            color : white;
+        }
+
+
+
+
+        /* 이용권 웨이브 테이블 영역 */
+        td{
+            width: 300px;
+            height: 100px;
+        }
+
+        /* 테이블 전체 영역 */
+        .ek_page_table{
+            background-color: #1b1b1b;
+            display: flex;
+            justify-content: center;
+        }
+        table{
+            border-collapse: collapse;
+        }
+
+        /* 테이블 thead 영역 */
+        .ek_page_table thead tr td{
+            border: 1px solid #2f2f2f;
+            width: 300px;
+            height: 250px;
+        }
+        .ek_page_table thead tr td div {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: baseline;
+            padding: 50px 10px 10px 10px;
+            position: relative;
+        }
+        .ek_recommend{
+            color: #3887ff;
+            border: 1px solid #3887ff;
+            border-radius: 50px;
+            padding: 3px 12px;
+            font-size: 12px;
+            margin: 0 auto;
+            height: 16px;
+
+            position: absolute;
+            top: 20px;
+            left: 125px;
+        }
+        .ek_page_table thead h2{
+            text-align: center;
+            font-size: 24px; 
+            color: white;
+            margin: 0 auto;
+        }
+        .ek_page_table thead button{
+            width: 270px;
+            height: 65px;
+            font-size: 16px; 
+            text-align: center;
+            margin: 10px auto;
+            padding: 20px;
+            background-color: #2f2f2f;
+            border: 0px;
+            border-radius: 5px;
+            color: #a5a5a5;
+
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .ek_page_table thead button:hover{
+            background-color: white;
+            color: black;
+        }
+        .ek_month{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+        }
+        .ek_month_percent{
+            background-color: #3887ff;
+            font-size: 12px;
+            color: white;
+            border-radius: 5px;
+            margin-left: 5px;
+            padding: 0px 6px;
+            text-align: center;
+            line-height: 22px;
+        }
+        .ek_price{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        /* 테이블 tbody 영역 */
+        .ek_page_table tbody tr th{
+            color: white;
+            font-weight: 400;
+            text-align: left;
+            padding-left: 30px;
+            border-right: 1px solid #2f2f2f;
+        }
+        .ek_page_table tbody tr td:nth-child(3){
+            border-left: 1px solid #2f2f2f;
+            border-right: 1px solid #2f2f2f;
+        }
+        .ek_icon_check{
+            width: 50px;
+            height: 50px;
+            display: block;
+            margin: 0 auto;
+            background-image: url("https://www.wavve.com/img/element-icons-40-x-40-arrow-default-ic-check-list-medium.d2bb501d.svg");
+            background-position: center;
+            background-size: cover; 
+        }
+        .ek_icon_uncheck{
+            width: 50px;
+            height: 50px;
+            display: block;
+            margin: 0 auto;
+            background-image: url("https://www.wavve.com/img/element-icons-40-x-40-default-ic-none.329508a5.svg");
+            background-position: center;
+            background-size: cover;
+        }
+        .ek_icon_text{
+            font-size: 16px;
+            color: #a5a5a5;
+            display: block;
+            text-align: center;
+        }
+
+        /* 테이블 text 영역 */
+        .ek_page_table_text{
+            color: #717171;
+            border-top: 1px solid #2f2f2f;
+            font-size: 14px;
+        }
+        .ek_page_table_text span{
+            margin: 30px 0px 10px 0px;
+            display: block;
+        }
+        .ek_page_table_text li{
+            margin: 2px 0px 0px 20px;
+        }
+        .ek_page_table_text a{
+            color: #a5a5a5;
+        }
+        .ek_page_table_text_nonliststyle{
+            list-style: none;
+        }
+
+       
+
+    </style>
+</head>
+<body>
+    
+    <!-- 이용권 상단 영역 -->
+    <section class="ek_page_top">
+        <h1>이용권</h1>
+        <h2>방송/영화/해외시리즈 무제한!</h2>
+    </section>
+
+    <!-- 이용권 배너 영역 -->
+    <section class="ek_page_voucher">
+        <div class="ek_page_voucher_div">
+            <button onclick="ek_btn_click()" id="ek_page_voucher_btn"></button>
+            <div class="ek_page_voucher_banner" id="ek_page_voucher_banner">
+                <a href="">
+                    <img src="https://image.wavve.com/v1/thumbnails/0_0_20_80/service30/crm/1m_voucher_pc_20220601.png">
+               </a>
+            </div>
+        </div>
+    </section>
+    
+    <!-- 이용권 웨이브/제휴 영역 -->
+    <section class="ek_page_icon">
+        <a href="ek_utilize_wavve.html"><h4 class="ek_page_icon_wavve">웨이브</h4></a>
+        <a href="ek_utilize_cooperation.html"><h4 class="ek_page_icon_cooperation">제휴</h4></a>
+    </section>
+
+    <!-- 이용권 웨이브 테이블 영역 -->
+    <section class="ek_page_table">
+        <table>
+            <!-- 이용권 웨이브 테이블 영역 첫번째 줄 -->
+            <thead>
+                <tr>
+                    <td style="border-left:0px"></td>
+                    <td>
+                        <div>
+                            <h2>Premium</h2>
+                            <button>
+                                <span>1개월</span>
+                                <span>₩13,900</span>
+                            </button>
+                            <button>
+                                <span class="ek_month">
+                                    <span>12개월</span>
+                                    <span class="ek_month_percent">16%</span>
+                                </span>
+                                <span class="ek_price">
+                                    <span>₩139,000</span>
+                                    <span style="font-size: 12px;">(월 ₩11,583)</span>
+                                </span>
+                            </button>
+                        </div>
+                    </td>
+                    <td>
+                        <div>
+                            <span class="ek_recommend">추천</span>
+                            <h2>Standard</h2>
+                            <button>
+                                <span>1개월</span>
+                                <span>₩10,900</span>
+                            </button>
+                            <button>
+                                <span class="ek_month">
+                                    <span>12개월</span>
+                                    <span class="ek_month_percent">16%</span>
+                                </span>
+                                <span class="ek_price">
+                                    <span>₩109,000</span>
+                                    <span style="font-size: 12px;">(월 ₩9,083)</span>
+                                </span>
+                            </button>
+                        </div>
+                    </td>
+                    <td style="border-right:0px">
+                        <div>
+                            <h2>Basic</h2>
+                            <button>
+                                <span>1개월</span>
+                                <span>₩7,900</span>
+                            </button>
+                            <button>
+                                <span class="ek_month">
+                                    <span>12개월</span>
+                                    <span class="ek_month_percent">16%</span>
+                                </span>
+                                <span class="ek_price">
+                                    <span>₩79,000</span>
+                                    <span style="font-size: 12px;">(월 ₩6,583)</span>
+                                </span>
+                                
+                            </button>
+                        </div>
+                    </td>
+                </tr>
+            </thead>
+            
+            <!-- 이용권 웨이브 테이블 영역 두번째 줄 -->
+            <tbody>
+                <tr>
+                    <th>모바일+태블릿+PC</th>
+                    <td><span class="ek_icon_check"></span></td>
+                    <td><span class="ek_icon_check"></span></td>
+                    <td><span class="ek_icon_check"></span></td>
+                </tr>
+                <tr>
+                    <th>TV</th>
+                    <td><span class="ek_icon_check"></span></td>
+                    <td><span class="ek_icon_check"></span></td>
+                    <td><span class="ek_icon_uncheck"></span></td>
+                </tr>
+                <tr>
+                    <th>화질</th>
+                    <td><sapn class="ek_icon_text">최고화질</sapn></td>
+                    <td><sapn class="ek_icon_text">FHD화질</sapn></td>
+                    <td><sapn class="ek_icon_text">HD화질</sapn></td>
+                </tr>
+                <tr style="border-bottom: 1px solid #2f2f2f">
+                    <th>동시시청</th>
+                    <td><sapn class="ek_icon_text">4명</sapn></td>
+                    <td><sapn class="ek_icon_text">2명</sapn></td>
+                    <td><sapn class="ek_icon_text">1명</sapn></td>
+                </tr>
+
+                <!-- 이용권 웨이브 테이블 영역 세번째 줄 -->
+                <tr>
+                    <th>TV</th>
+                    <td><span class="ek_icon_check"></span></td>
+                    <td><span class="ek_icon_check"></span></td>
+                    <td><span class="ek_icon_check"></span></td>
+                </tr>
+                <tr>
+                    <th>화질</th>
+                    <td><span class="ek_icon_check"></span></td>
+                    <td><span class="ek_icon_check"></span></td>
+                    <td><span class="ek_icon_check"></span></td>
+                </tr>
+                <tr>
+                    <th>동시시청</th>
+                    <td><span class="ek_icon_check"></span></td>
+                    <td><span class="ek_icon_check"></span></td>
+                    <td><span class="ek_icon_check"></span></td>
+                </tr>
+                <tr>
+                    <th>화질</th>
+                    <td><span class="ek_icon_check"></span></td>
+                    <td><span class="ek_icon_check"></span></td>
+                    <td><span class="ek_icon_check"></span></td>
+                </tr>
+                <tr>
+                    <th>동시시청</th>
+                    <td><span class="ek_icon_check"></span></td>
+                    <td><span class="ek_icon_check"></span></td>
+                    <td><span class="ek_icon_check"></span></td>
+                </tr>
+                <tr  class="ek_page_table_text">
+                    <td colspan="4" >
+                        <span style="margin-top: 70px;">서비스 이용 주의사항</span>
+                        <ul>
+                            <li>Wavve 서비스는 국내 및 해외 서비스 대상 국가에서 이용하실 수 있습니다.</li>
+                            <li>이용권 및 개별 구매 영화는 국내에서 결제 가능하고, 결제 후 해외 서비스 대상국가에서 모바일/태블릿 앱으로 (ios/Android) 7일간 시청할 수 있습니다.</li>
+                            <li>일부 콘텐츠는 콘텐츠 제공사의 요청으로 해외 서비스 대상 국가에서도 이용이 불가합니다.</li>
+                            <li>해외 서비스 대상 국가에서는 다운로드를 제공하지 않습니다.</li>
+                            <li>해외 서비스 대상 국가 : 싱가폴, 인도네시아, 말레이시아, 필리핀, 베트남, 라오스, 태국</li>
+                            <li>해외 서비스 대상 국가가 아닌 국가에서는 서비스 이용이 불가합니다.</li>
+                            <li>프리미엄 이용권은 동시에 4명, 스텐다드 이용권은 2명이 동시에 시청할 수 있습니다. 베이직 이용권은 1명만 시청할 수 있습니다.</li>
+                            <li>일부 콘텐츠는 콘텐츠 제공사의 요청으로 LIVE 및 VOD 서비스를 제공하지 않을 수 있습니다.</li>
+                            <li>일부 콘텐츠는 콘텐츠 제공사의 요청으로 FHD 화질을 제공하지 않을 수 있습니다.</li>
+                            <li>콘텐츠에 따라 다운로드를 제공하지 않을 수 있으며, 이용권에 따라 다운로드 횟수가 제한됩니다.</li>
+                            <li>TV 기기에서는 다운로드가 불가합니다.</li>
+                            <li>프리미엄 이용권은 일부 콘텐츠를 최고화질(4K UHD, Dolby, HDR)로 시청할 수 있습니다. 최고화질은 이용하는 기기의 사양, 네트워크 환경 등에 따라 변경될 수 있습니다.</li>
+                            <li>이용 기기 중 TV 는 Wavve앱이 설치가 되어 있거나 앱스토어에서 설치가 가능한 스마트TV 및 Android TV 기기이며, TV에서는 일부 채널은 LIVE 서비스를 제공하지 않습니다. 
+                                <a href="https://www.wavve.com/customer/faq.html?searchWord=%EC%8B%A4%EC%8B%9C%EA%B0%84%20%EC%B1%84%EB%84%90">자세히보기</a>
+                            </li>
+                            <li>LG 스마트 TV 이외의 TV에서는 콘텐츠제공사의 요청으로 LIVE 서비스를 제공하지 않습니다.</li>
+                            <li>구형 smart TV에서 DRM콘텐츠 재생이 종료됨에 따라 서비스가 제공되지 않을 수 있습니다.
+                                <a href="https://www.wavve.com/customer/notice_view?filterType=all&noticeId=2900">자세히보기</a>
+                            </li>
+                        </ul>
+                        <span>서비스 이용 권장사항</span>
+                        <ul>
+                            <li>PC : Windows 10 이상, MacOS 10.12 이상. Chrome/Edge/Safari 등 HTML 5 지원 브라우저 최신 버전,</li>
+                            <li class="ek_page_table_text_nonliststyle">스마트폰 : Android 11 버전 이상, iOS 15 버전 이상의 국내 출시 모델,</li>
+                            <li class="ek_page_table_text_nonliststyle">태블릿 : Android 11 버전 이상, iOS 15 버전 이상의 국내 출시 모델,</li>
+                            <li class="ek_page_table_text_nonliststyle">TV : 삼성 스마트TV Tizen 3.0 이상의 모델 / LG 스마트TV webOS 3.5 이상의 모델</li>
+                        </ul>
+                        <span>이용권 구매 주의사항</span>
+                        <ul>
+                            <li>모든 이용권은 부가세(VAT) 포함 가격입니다.</li>
+                            <li>이용권 가격은 변경될 수 있습니다.</li>
+                            <li>Google Play 결제 금액은 PC/모바일웹 결제 금액과 상이합니다.
+                                <a href="https://www.wavve.com/customer/notice_view?filterType=service&noticeId=2865&pageNum=1&searchWord=">자세히보기</a>
+                            </li>
+                            <li>자동결제는 1개월 주기로 매월 구매한 날과 동일한 날짜에 결제됩니다. 해당월에 동일한 날짜가 없으면 말일에 결제됩니다.</li>
+                            <li>결제 당일을 제외한 이용기간 중 언제든지 자동결제를 해지하실 수 있습니다. 해지하면 더 이상 추가 결제되지 않으며, 다음 결제 예정일까지 서비스를 계속 이용할 수 있습니다.
+                                <a href="https://www.wavve.com/member/login">구매내역 바로가기</a>
+                            </li>
+                            <li>제휴 이용권은 할인한 가격이므로 추가 혜택(페이백, 기타 할인 등)을 제공하지 않습니다.</li>
+                            <li>통신사, 신용카드 정보 변경 및 잔액부족 시에는 결제실패로 자동결제가 해지될 수 있습니다.</li>
+                            <li>고객센터를 통한 자동결제해지 신청은 본인만 가능합니다.</li>
+                            <li>Wavve 상품은 구매 후 7일 이내에 결제 취소 요청이 가능하나, 이 기간 내에 상품에 해당하는 콘텐츠의 제공을 개시하는 등의 사유가 있을 경우 환불에 제한이 있을 수 있습니다.</li>
+                            <li>자세한 사항은 <a href="https://www.wavve.com/customer/agreement?category=payment">'유료상품 이용약관'</a> 제10조를 참조하시기 바랍니다.</li>
+                            <li>12개월 이용권의 경우, 장기 이용에 대한 할인 혜택이 적용된 금액이므로 중도 해지 시에는 1개월 이용권 기준의 할인 미적용 정상가 기준으로 일할 계산하여 환불 금액이 정산되오니 유의 부탁드립니다.</li>
+                            <li><박하경 여행기> 런칭 기념 12개월 이용권 할인 프로모션(12개월 이용권 33% 할인)은 2023.05.25 부터 2023.06.07 까지 진행됩니다.</li>
+                            <li>12개월 이용권 할인 프로모션 기간에 할인 상품 구매 시 첫 해에만 추가 할인 금액으로 결제되고, 12개월 후에는 기존 금액 (16% 할인)으로 연 1회 정기 결제됩니다.</li>
+                        </ul>
+
+
+                        
+                        
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- script 영역 -->
+    <script>
+        let flag = true;
+        function btn_click(){
+            let a = document.getElementById("page_voucher_banner");
+            let b = document.getElementById("page_voucher_btn");
+            if(flag==true){
+                a.style.height = "auto";
+                b.style.transform = "rotate(180deg)";
+                flag = false;
+            }else{
+                a.style.height = "110px";
+                b.style.transform = "rotate(0deg)";
+                flag = true;
+            }
+        }
+    </script>
+</body>
+</html>
