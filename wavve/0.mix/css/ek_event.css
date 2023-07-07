@@ -1,0 +1,135 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+a{
+    text-decoration: none;
+}
+
+/* 이벤트 페이지 탑 */
+.ek_event_top{
+    background-color: #252525;
+    color: white;
+    font-size: 20px;
+    text-align: center;
+    padding: 50px;
+}
+.ek_event_top img{
+    width: 70px;
+    height: 70px;
+    margin-bottom: 8px;
+}
+
+
+/* 이벤트 페이지 메뉴 */
+.ek_event_menu_wrap{
+    background-color: #1b1b1b;
+    border-bottom: 1px solid #2f2f2f;
+}
+.ek_event_menu_div{
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+.ek_event_menu{
+    padding: 10px;
+    margin: 20px;
+    font-size: 18px;
+    font-weight: 600;
+    cursor: pointer;
+}
+.ek_event_menu_1{
+    border-bottom : 0px;
+}
+.ek_event_menu_2{
+    border-bottom: 4px solid #1351f9;
+}
+.ek_event_menu_a1{
+    color: #a5a5a5;
+}
+.ek_event_menu_a2{
+    color: white;
+}
+
+/* 이벤트 페이지 항목 */
+.ek_event_content_wrap{
+    background-color: #1b1b1b;
+    border-bottom: 1px solid #2f2f2f;            
+}
+.ek_event_content{
+    width: 1350px;
+    margin: 0 auto;
+    padding: 10px;
+    padding-top: 50px;
+}
+.ek_event_content ul{
+    display: flex;
+    justify-content: center;
+}
+.ek_event_content li{
+    list-style: none;
+    padding: 20px 0px 20px 0px;
+    border-bottom: 1px solid  #2f2f2f;  
+}
+.ek_event_content li a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.ek_event_content_img{
+    width: 260px;
+    height: 140px;
+    margin-right: 20px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+.ek_event_content_text{
+    width: 360px;
+    padding-right: 20px;
+}
+.ek_event_content_text p{
+    color: #717171;
+    font-size: 16px;
+    margin-bottom: 15px;
+    width: 100%;
+}
+.ek_event_content_text h3{
+    color: #a5a5a5;
+    font-size: 20px;
+}
+.ek_event_content_text p strong{
+    color: #a5a5a5;
+    font-size: 15px;
+    padding-right: 10px;
+}
+
+
+/* 이벤트 페이지 버튼 */
+.ek_event_content_btnGroup{
+    display: flex;
+    justify-content: center;
+    height: 200px;
+    
+}
+.ek_event_content_btn{
+    background-color: transparent;
+    width: 30px;
+    height: 30px;
+    color: #a5a5a5;
+    font-size: 14px;
+    font-weight: 600;
+    display: block;
+    text-align: center;
+    line-height: 29px;
+    margin-top: 20px;
+    margin-left: 10px;
+    cursor: pointer;
+}
+.ek_btn_click{
+    border: 1px solid white;
+    border-radius: 50%;
+    color: white;
+}
+
