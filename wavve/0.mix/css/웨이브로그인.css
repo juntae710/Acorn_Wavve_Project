@@ -54,7 +54,14 @@ footer{
     height: 320px;
     margin: 0 auto;
     background-color: #252525;
+<<<<<<< HEAD
     border: 1px solid #252525;
+=======
+
+    border: 1px solid #252525;
+
+    
+>>>>>>> ca151b5b5b686f618f04e1e7efbaa78ab52281cc
     padding: 40px;
 }
 
@@ -86,7 +93,14 @@ footer{
 
 .ul_checkbox_wrap{
     background-color: #252525;
+<<<<<<< HEAD
     border: 1px solid #252525;
+=======
+
+    border: 1px solid #252525;
+
+    
+>>>>>>> ca151b5b5b686f618f04e1e7efbaa78ab52281cc
     height: 35px;
 }
 
@@ -141,7 +155,14 @@ li{
     height: 30px;
     margin: 20px auto 50px;
     background-color: #252525;
+<<<<<<< HEAD
     border: 1px solid #252525;
+=======
+
+    border: 1px solid #252525;
+
+    
+>>>>>>> ca151b5b5b686f618f04e1e7efbaa78ab52281cc
     justify-content: center;
 }
 
@@ -187,7 +208,14 @@ img{
     margin: 0 auto;
     margin-top: 20px;
     margin-bottom: 20px;
+<<<<<<< HEAD
     border: 1px solid #252525;
+=======
+
+    border: 1px solid #252525;
+
+    
+>>>>>>> ca151b5b5b686f618f04e1e7efbaa78ab52281cc
     text-align: center;
 }
 
