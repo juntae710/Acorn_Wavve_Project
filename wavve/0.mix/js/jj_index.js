@@ -4,7 +4,7 @@ let jj_nextBtns = document.querySelectorAll('.jj_next-btn'); //다음 버튼
 let jj_moves = Array.from({ length: jj_boxes.length }, () => 0); //개수만큼의 요소를 가지는 배열을 생성하고, 모든 요소를 0으로 초기화
 let jj_boxWidth = jj_boxes[0].querySelector('.jj_infoBox').offsetWidth; //이미지 영역에 가로넓이 가져옴
 let jj_containerWidth = jj_boxes[0].offsetWidth; //큰덩어리 영역 가로넓이 가져옴
-let jj_maxMove = jj_boxWidth - jj_containerWidth; //이미지 영역이 큰덩어리 영역보다 얼마나 더 넓은지를 계산
+let jj_maxMove = jj_containerWidth - jj_boxWidth; //이미지 영역이 큰덩어리 영역보다 얼마나 더 넓은지를 계산
 
 //숨겨진 버튼이 나올때
 function showButtons(index) {
@@ -50,7 +50,7 @@ function checkButtonState(index) {
         jj_prevBtns[index].classList.remove('jj_nextPrev');
     }
 
-    if (jj_moves[index] <= -jj_maxMove) {
+    if (jj_moves[index] <= jj_maxMove) {
         jj_nextBtns[index].classList.add('jj_nextPrev');
     } else {
         jj_nextBtns[index].classList.remove('jj_nextPrev');
