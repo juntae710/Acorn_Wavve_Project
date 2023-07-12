@@ -9,7 +9,7 @@ header{
     position: fixed;
     width: 100%;
     background-color: #1b1b1b;
-    z-index: 9999;
+    z-index: 99;
 }
 
 
@@ -18,7 +18,7 @@ header{
     background-color: #252525;
     position: fixed;
     width: 100%;
-    z-index: 9999;
+    z-index: 99;
 }
 
 .yj_h1{
@@ -32,6 +32,7 @@ header{
     line-height: 36px;
     font-weight: 400;
     text-align: left;
+    z-index: 1;
 }
 
 
@@ -438,10 +439,12 @@ body{
         font-size: 20px;
         line-height: 74px;
         margin-left: 40px;
+        
     }
 
     .JawHwa-c ul {
         display: none;
+        z-index: 999;
         list-style: none;
     }
 
@@ -449,19 +452,23 @@ body{
         width: 200px;
         font-size: 13px;
         height: 22px;
+        z-index: 999;
 
         background-color: #101010;
         line-height: 34px;
         padding: 10px;
 
     }
-
+    .JawHwa-all li {
+        z-index: 999;
+    }
     .JawHwa-c .JawHwa-all {
         width: 200px;
         font-size: 13px;
         height: 30px;
         padding: 10px;
         line-height: 30px;
+        
 
     }
 
