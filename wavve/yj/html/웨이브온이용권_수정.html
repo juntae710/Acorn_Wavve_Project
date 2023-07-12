@@ -10,25 +10,30 @@
 <style>
 
     *{
-        background-color: #1b1b1b;
-        margin: 0 auto;
+        margin: 0px;
         padding: 0px;
     }
 
 
     header{
-        border: 1px solid white;
+        position: fixed;
+        width: 100%;
+        background-color: #1b1b1b;
+        z-index: 9999;
     }
+
+
 
     .yj_sub_header{
         background-color: #252525;
-        padding: 40px;
         position: fixed;
         width: 100%;
-        z-index: 1;
+        z-index: 9999;
     }
 
     .yj_h1{
+        padding: 40px;
+        margin: 0 auto;
         position: relative;
         width: 1240px;
         color: white;
@@ -55,27 +60,30 @@
     }
 
     .yj_ticket_body{
-        margin-top: 120px;
         height: 1350px;
         text-align: center;
     }
 
     body{
+        background-color: #1b1b1b;
         font-family: NotoSans,sans-serif;
     }
 
     .yj_waveon_baaner{
+        padding-top: 220px;
         height: 300px;
         justify-content: center;
     }
 
     .yj_waveon_img{
+        
         width: 1240px;
         height: 300px;
     }
 
 
     .yj_waveon_group_wrap{
+        margin:  auto;
         height: 1050px;
     }
 
@@ -87,6 +95,7 @@
 
 
     .yj_waveon_tit{
+        margin: 0 auto;
         position: relative;
         font-size: 24px;
         font-weight: 400;
@@ -114,6 +123,7 @@
         height: 788px;
         padding: 20px 30px 0;
         margin-top: 18px;
+        margin: 0 auto;
         border: 1px solid #2f2f2f;
         border-radius: 8px;
     }
@@ -214,9 +224,10 @@
     .yj_btn_wrap{
         width: 1240px;
         height: 112px;
-        margin-top: 30px;
+
         padding-bottom: 30px;
         text-align: center;
+        margin: 30px auto;
     }
 
 
@@ -254,6 +265,494 @@
     }
 
 
+    .JawHwa-header-rap {
+            width: 100%;
+            border-bottom: 1px solid #2f2f2f;
+        }
+
+
+        .JawHwa_header1 {
+            width: 1240px;
+            height: 34px;
+            background-color: #1b1b1b;
+            margin: 0 auto;
+        }
+
+        .JawHwa_wrap {
+            width: 1240px;
+            margin: 0 auto;
+            position: relative;
+        }
+
+        .JawHwa_cate {
+            list-style: none;
+            display: flex;
+            position: absolute;
+            right: 0;
+
+
+        }
+
+        /*  메뉴 사이 막대 */
+
+        .JawHwa_header1 ul.JawHwa_cate>li::after {
+            position: absolute;
+            top: 12px;
+            right: 0;
+            width: 1px;
+            height: 10px;
+            content: "";
+            background-color: #2f2f2f;
+        }
+
+        .JawHwa_header1 ul>li:last-child::after {
+            background-color: transparent;
+        }
+
+        .JawHwa_cate>li {
+            position: relative;
+            padding: 0 11px;
+            line-height: 32px;
+            font-size: 12px;
+
+        }
+
+
+        .JawHwa_header1 .JawHwa_wrap .JawHwa_cate li a {
+            text-decoration: none;
+            color: #a5a5a5;
+
+        }
+
+        button {
+            border: 0;
+            background-color: #1b1b1b;
+            color: #a5a5a5;
+        }
+
+        .JawHwa_button {
+            background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAwAAAAMCAYAAABWdVznAAAAAXNSR0IArs4c6QAAAH1JREFUKBVjYBj6gBHmhe3btzv8//9/JZBv5eXldRckvnPnTsW/f/+eZGRkDPP09DwAEoNrAHG2bt2aAaTy+fn5zX7//v3/+/fvIMVTgYqngeRBAEUDSABo0xSgTUpA5l8g/dTb2xtkCG4AVMQEtOnMtm3brgLZzLhVDl0ZANeHNOWoHfwJAAAAAElFTkSuQmCC) no-repeat bottom 2px right 0;
+            padding-right: 15px;
+            margin-right: 6px;
+
+        }
+
+        /* 숨김(하위)메뉴 부분 */
+
+
+        .JawHwa_menu-item:hover .JawHwa_submenu {
+            display: block;
+            z-index: 21;
+        }
+
+        .JawHwa_submenu:hover a {
+            color: white;
+        }
+
+        .JawHwa_submenu {
+            display: none;
+            position: absolute;
+            background-color: #1b1b1b;
+            width: 87px;
+        }
+
+        .JawHwa_submenu .JawHwa_submenu-coin {
+            border-top: 1px solid #1b1b1b;
+        }
+
+
+        .JawHwa_submenu a {
+            color: #a5a5a5;
+            display: block;
+            padding: 10px;
+            background-color: #101010;
+            width: 77px;
+            height: 17px;
+            text-align: center;
+            margin: 0 auto;
+        }
+
+
+
+
+
+
+
+
+
+
+        /* 헤더 탑 22222 */
+
+        .JawHwa_header2 {
+            width: 1240px;
+            height: 74px;
+            margin: 0 auto;
+            display: flex;
+            position: relative;
+            background-color: #1b1b1b;
+
+        }
+
+        .JawHwa_logo {
+            width: 108px;
+            height: 74px;
+
+        }
+
+        .JawHwa_logo img {
+            width: 108px;
+            height: 24px;
+
+            margin-top: 24px;
+        }
+
+        .JawHwa_cate2 {
+            width: 360px;
+            height: 74px;
+            color: #a5a5a5;
+            display: flex;
+            margin-left: 60px;
+        }
+
+        .JawHwa_cate-home a {
+            color: white;
+            text-decoration: none;
+            width: 80px;
+            height: 30px;
+            font-size: 20px;
+            line-height: 74px;
+            margin-left: 30px;
+        }
+
+
+        .JawHwa_cate2 span {
+            padding: 0px 20px;
+            text-align: center;
+            font-size: 20px;
+            line-height: 74px;
+
+        }
+
+        .JawHwa_cate2_LM {
+            margin-left: 20px;
+        }
+
+        .JawHwa_search-box {
+            width: 40px;
+            height: 40px;
+        }
+
+        .JawHwa-c {
+            width: 80px;
+            height: 30px;
+            font-size: 20px;
+            line-height: 74px;
+            margin-left: 40px;
+        }
+
+        .JawHwa-c ul {
+            display: none;
+            list-style: none;
+        }
+
+        .JawHwa-c li {
+            width: 200px;
+            font-size: 13px;
+            height: 22px;
+
+            background-color: #101010;
+            line-height: 34px;
+            padding: 10px;
+
+        }
+
+        .JawHwa-c .JawHwa-all {
+            width: 200px;
+            font-size: 13px;
+            height: 30px;
+            padding: 10px;
+            line-height: 30px;
+
+        }
+
+        .JawHwa-c:hover ul {
+            display: block;
+
+
+        }
+
+        .JawHwa_search-box {
+            position: absolute;
+            right: 0;
+            top: 12px;
+            width: 40px;
+            height: 40px;
+
+        }
+
+        .JawHwa_search-box img {
+            width: 22px;
+            height: 22px;
+            padding: 10px;
+
+
+        }
+
+        .JawHwa_section {
+            width: 100%;
+            height: 500px;
+            background-color: #1b1b1b;
+        }
+
+        /* < !--풋터--> */
+        .JawHwa-footer {
+            width: 100%;
+            background-color: #1b1b1b;
+
+        }
+
+        /*title영역*/
+        .footer_title {
+            width: 100%;
+            height: 51px;
+            margin: 0 auto;
+            display: flex;
+            border-top: 1px solid #2f2f2f;
+            border-bottom: 1px solid #2f2f2f;
+            background-color: #1b1b1b;
+        }
+
+        .footer_title_name {
+            width: 80px;
+            height: 50px;
+            text-align: center;
+            line-height: 50px;
+
+            font-size: 18px;
+
+        }
+
+        .footer_title_name a {
+            text-decoration: none;
+            color: #a5a5a5
+        }
+
+        .footer_title_wrap {
+            width: 1242px;
+            height: px;
+            margin: 0 auto;
+            display: flex;
+            position: relative;
+
+        }
+
+        .footer_title_wrap_left,
+        .footer_title_wrap_right {
+            border: 0.1px solid #4b4949;
+            color: a5a5a5;
+            width: 50px;
+            height: 50px;
+            position: absolute;
+            text-align: center;
+            line-height: 50px;
+
+        }
+
+        .footer_title_wrap_left,
+        .footer_title_wrap_right a {
+            color: #a5a5a5;
+
+        }
+
+        .footer_title_wrap_left:hover {
+            opacity: 0.5;
+        }
+
+
+        .footer_title_wrap_right:hover {
+            opacity: 0.5;
+        }
+
+        .footer_title_wrap_left a {
+            color: black;
+            text-decoration: none;
+        }
+
+        .footer_title_wrap_right a {
+            color: black;
+            text-decoration: none;
+
+        }
+
+        .footer_title_wrap_right {
+            right: 0;
+            font-size: 65px;
+            line-height: 34px;
+        }
+
+        .footer_title_wrap_left {
+            right: 50px;
+            font-size: 65px;
+            line-height: 34px;
+
+        }
+
+        /*footer내용header*/
+        .footer_info_header {
+            width: 1240px;
+            height: 40px;
+            margin: 0 auto;
+            display: flex;
+            position: relative;
+
+        }
+
+        .footer_info_header_nav {
+            display: flex;
+            font-size: 14px;
+            line-height: 20px;
+
+        }
+
+        .footer_info_header_nav_name {
+            margin-right: 15px;
+
+
+        }
+
+        .footer_info_header_nav_name a {
+            text-decoration: none;
+            line-height: 40px;
+            color: #a5a5a5
+        }
+
+        .footer_info_header_nav_name a:hover {
+            color: blue;
+        }
+
+        .footer_info_header_nav_name a span {
+            color: white;
+            font-weight: bolder;
+        }
+
+        .footer_info_header_nav_name a span:hover {
+            color: white;
+
+        }
+
+        .footer_header-wrap {
+            display: flex;
+            position: absolute;
+            right: 0;
+            margin-top: 10px;
+        }
+
+        .footer_info_header_imgs {
+            margin-left: 260px;
+            display: flex;
+        }
+
+        .footer_info_header_nav_img_on {
+            width: 94px;
+            height: 38px;
+        }
+
+        .footer_info_header_nav_menu {
+            width: 225px;
+            height: 38px;
+            background-color: #252525;
+            font-size: 13px;
+            
+        }
+
+        .footer_info_header_nav_menu .JawHwa-content-wrap li{
+            line-height: 1px;
+        }
+
+        .footer_info_header_nav_menu span {
+            color: #a5a5a5;
+            line-height: 20px;
+            margin-left: 20px;
+            margin-top: 10px;
+            display: block;
+
+        }
+
+        .JawHwa-content-wrap{
+            border-radius: 20px;
+            color: #a5a5a5;
+            background-color: #252525;
+            
+
+        }
+
+
+
+        .JawHwa-content-wrap span {
+            margin-left: 20px;
+            font-size: 12px;
+
+        }
+
+
+
+
+
+
+
+        .footer_info_header_nav_img_f {
+            margin-left: 15px;
+        }
+
+
+
+        .footer_info_header_nav_img_f img {
+            width: 32px;
+            height: 32px;
+
+        }
+
+
+        .footer_info_header_nav_menu ul {
+            display: none;
+            list-style: none;
+        }
+
+        .footer_info_header_nav_menu:hover ul {
+            display: block;
+        }
+
+
+        /*풋터내용*/
+        .footer_section {
+            width: 1240px;
+            margin: 0 auto;
+            color: #a5a5a5;
+            font-size: 12px;
+            
+        }
+
+        .footer_section a {
+            color: #a5a5a5
+        }
+
+        .footer_section a:hover {
+            color: blue;
+        }
+
+        footer {
+            margin-top: 180px;
+            width: 100%;
+            height: 300px;
+            background-color: #1b1b1b;
+        }
+
+        #content {
+            display: none;
+            list-style: none;
+        }
+
+
 </style>
 
 
@@ -271,6 +770,64 @@
     
 
     <header>
+
+
+        <div class="JawHwa-header-rap">
+            <div class="JawHwa_header1">
+                <div class="JawHwa_wrap">
+                    <ul class="JawHwa_cate">
+                        <li><a href="https://www.wavve.com/member/login?referer=%2Findex.html">로그인</a></li>
+                        <li><a href="https://www.wavve.com/voucher/index.html">이용권</a></li>
+                        <li class="JawHwa_menu-item">
+                            <button type="button" class="JawHwa_button">쿠폰·코인</button>
+                            <div class="JawHwa_submenu">
+                                <div><a href="https://www.wavve.com/member/login?referer=%2Fmy%2Fcoupon">쿠폰 등록</a></div>
+                                <div class="JawHwa_submenu-coin">
+                                    <a href="https://www.wavve.com/member/login?referer=%2Fmy%2Fcoin">코인 충전</a>
+                                </div>
+                            </div>
+                        </li>
+                        <li><a href="https://www.wavve.com/voucher/wavveon">웨이브온</a></li>
+                        <li><a href="https://www.wavve.com/customer/event_list.html">이벤트</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+
+
+        <div class="JawHwa_header2"">
+                <div class=" JawHwa_logo""><img src="https://www.wavve.com/img/ci-wavve.5b304973.svg"></div>
+        <div class="JawHwa_cate2">
+            <div class="JawHwa_cate-home"><a href="https://www.wavve.com/index.html">홈</a></div>
+            <div class="JawHwa-c">카테고리
+                <ul>
+                    <li class="JawHwa-all">전체 카테고리 보기</li>
+                    <li><strong style="color: white;">추천 메뉴</strong></li>
+                    <li>드라마</li>
+                    <li>예능</li>
+                    <li>영화</li>
+                    <li>영화플러스</li>
+                    <li>해외시리즈</li>
+                    <li>프로야구</li>
+                    <li>ORIGINAL</li>
+                    <li>CLASSIC</li>
+                    <li>BIFAN</li>
+                </ul>
+            </div>
+            <div class="JawHwa_cate2_LM"><span>LIVE</span></div>
+            <div class="JawHwa_cate2_LM"><span>MY</span></div>
+        </div>
+        <div class="JawHwa_search-box"><a href=""><img src="https://www.wavve.com/img/icon-search-22.704db5c8.svg"
+                    alt=""></a>
+        </div>
+
+
+
+
+        </div>
+
+
         
         <div class="yj_sub_header">
             <h1 class="yj_h1">웨이브온 이용권</h1>
@@ -501,7 +1058,80 @@
     </div>
 
 
-    <footer></footer>
+    <footer>
+        <div class="footer_title">
+
+            <div class="footer_title_wrap">
+                <div class="footer_title_name"><a href="">공지사항</a></div>
+                <div class="footer_title_wrap_left"><a href=""><img
+                            src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAAAXNSR0IArs4c6QAAAlBJREFUaAXtVktrGlEUzvioYqELpRCyiIss7CK7/gJdNMEEQjdSunATfNEEugi0BPoDmkV3iY/4qGIKFUIXDdJmY6kEAv0FdhNw405oScWq0Xx3IQyDEqLn5AFnNvfOnbnf+b7vnHNnZmbkEgfEAXFAHBAHxAFxQBwQB+6iA8lk8i01LxM14FV4iURiZzAYPL/qves+t1x3w6Tvg7yGTOxhfGq3259NijNunzbuAeV6qVQyN5vNj8CcdzqdK4FA4JwSX2GxZwQiHkDEZ8Sy22y2JYhoU4tQeKwZQSk5UEpfEOevpmkvI5FIl0OEwmRr9mKx+Kjf73+DkAbK6QWnCCWEJSP5fN7VarW+IwunELCJcaCCcV7kGcnlcrMQUQX542g0unETIpRBpELS6bS73W6fgHweIrY5M2DEJhMCEYvdbrdqMpk+QMR7YyDuezIhvV5vGWSr6IldbtKj8MmEWK3WTyipBfyCpHBSkeGOIj1qjfTUKhQKD9HoRwjU8Hg8Qa/X2xsVlGONVIgiWC6XbfV6/RBZuXC73QG/3/+fg7gRk1yIClCpVCy1Wu0AU5fD4VgLBoP/jIGp71mEKJKqT9Av+5g+wUnmxyHwh5q8Ho+tKdH4/Vgsto7xF0T9yGazj/WBqedsQoZE8U15DSFfO53Oz0wmMzdcpx7ZSstIFGW2hbVXZrPZFwqFzozPp72/MSGKaDwej6DU3qFnfOFw+Pe05PX72UtLHww9k0SZvVG/9/r1eztPpVKr95a8EBcHxAFxQBwQB8QBcUAcEAdu3YFLPjOyQF+dJGYAAAAASUVORK5CYII="
+                            alt="">
+                    </a>
+                </div>
+                <div class="footer_title_wrap_right"><a href=""><img
+                            src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyJpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMy1jMDExIDY2LjE0NTY2MSwgMjAxMi8wMi8wNi0xNDo1NjoyNyAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENTNiAoV2luZG93cykiIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6MTU2RTc3QzVDNUU2MTFFNzhGNzQ4QUM1NTY5RjA2NDMiIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6MTU2RTc3QzZDNUU2MTFFNzhGNzQ4QUM1NTY5RjA2NDMiPiA8eG1wTU06RGVyaXZlZEZyb20gc3RSZWY6aW5zdGFuY2VJRD0ieG1wLmlpZDoxNTZFNzdDM0M1RTYxMUU3OEY3NDhBQzU1NjlGMDY0MyIgc3RSZWY6ZG9jdW1lbnRJRD0ieG1wLmRpZDoxNTZFNzdDNEM1RTYxMUU3OEY3NDhBQzU1NjlGMDY0MyIvPiA8L3JkZjpEZXNjcmlwdGlvbj4gPC9yZGY6UkRGPiA8L3g6eG1wbWV0YT4gPD94cGFja2V0IGVuZD0iciI/PvXeOssAAAH+SURBVHja7Jm/SwJhGMe9y0uwMJCCajAiyKU/oDGnQlwkkCDQIEKFhraioaWphpaI9PxFYg7SEtERDRmJU/9AjrY06VSHeZfX9wZBGsLhunz1eeB4Hz249/nc932f53k5TtM0Sz8Yb+kTIxACIRACIRACIRACGQQQURT3OI6zdHv1LAi6aX8sFjtmXhGbzbYMmCXAnGPkzALhjD6P6MulUCiM1uv1W/x8dTqdG4FA4OsXBXt3syPwd10ZuOMAugLYMJOKtC0ejwt4fh6uA//7w+GwzJQibUPgCpbWGoJ9a7Vad7lczsGkIh1vnYM6pxgX7Xb7cigUqjGlSAecFolEtjHey7JcymQyk0xXdsDsA+ai0WiUk8nkDNMtCmCOeJ4/URSlBJgFpnstJIEzDCVVVVeYBcHm5lH1RSyxOUEQ8kxlrbYVi0VrpVLJwp1C9vIFg8EPo+Y3DUSSJFu1Wi3g/pDL5Vr1er2fRqZfU0Cy2ewI0u413Jrb7V73eDyq0XXkz0FQCMdQ1SW4L8hYW7jfYq5FSafTEwj0EcE/R6PRzZ8QTNSRVCo13Ww2nwByAyV2mDyzJxKJWRS8ss4DJQ6YPFgBYh574gHPPQREvIu6Ysi8VqPfjN6uI7hdQFyaXWkNvURR9P3H/Bx9QyQQAiEQAiEQAiEQAiGQgQH5FmAAnG5iNuw7AaQAAAAASUVORK5CYII="
+                            alt=""></a></div>
+            </div>
+        </div>
+
+        <div class="footer_info_header">
+            <div class="footer_info_header_nav">
+                <div class="footer_info_header_nav_name"><a href="">회사소개</a></div>
+                <div class="footer_info_header_nav_name"><a href="">인재채용</a></div>
+                <div class="footer_info_header_nav_name"><a href="">서비스 소개</a></div>
+                <div class="footer_info_header_nav_name"><a href="">이용약관</a></div>
+                <div class="footer_info_header_nav_name"><a href=""><span>개인정보 처리방침</span></a></div>
+                <div class="footer_info_header_nav_name"><a href="">고객센터</a></div>
+            </div>
+            <div class="footer_header-wrap">
+            <div class="footer_info_header_imgs">
+                <div class="footer_info_header_nav_img_on"><img src="https://www.wavve.com/img/ico-footer-wavve-on.d4912b54.svg"></div>
+
+                <div class="footer_info_header_nav_menu" onclick="toggle()"><span>사업자용 웨이브 가입</span>
+                    <ul id="content">
+                        <div class="JawHwa-content-wrap">
+                        <li><span>웨이브온 서비스 소개</span></li>
+                        <li><span>웨이브온 PC방 서비스</span></li>
+                        <li><span>웨이브온 도서관 서비스</span></li>
+                        <li><span>웨이브온 병원 서비스 </span></li>
+                        <li><span>웨이브온 숙박 서비스 </span></li>
+                        <li><span>웨이브온 일반 서비스 </span></li>
+                        </div>
+                    </ul>
+                </div>
+
+
+            </div>
+
+            <div class="footer_info_header_nav_img_f">
+                <img
+                        src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAMAAACdt4HsAAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAK7OHOkAAABXUExURUdwTCcnJyYmJiUlJScnJyYmJiYmJiUlJScnJy4uLiUlJVVVVf///ysrKyYmJiYmJiUlJSUlJf///zMzM+bm5rm5uUlJSTw8PJOTk8fHx6Ojo/Dw8GlpaSKgx6gAAAARdFJOUwA3jtT6yH/sXRCpAwEe33P+GdQUZQAAAatJREFUWMOtl9mWwiAMhil7Udumi6067/+cU3EZdSCB4n/Vczz5TEICCWMR1VY71RgpTaOctjXLUsVFBy/qoBO8SrWuWwFBiTbFj1obiMpoCrG3iLlH2D1mf1BASh2Q3BlIkIlm00pIkrRB8x2HZPFdwN5Bhtx/Aocs8c//t5CpjzxUMhcg387iYCBb5qUe9go2SP3VpIVNeqahxgMYjlcNgSAenaUx62XsvZbAj5p2YL6bhwF3F1rEgVOPAaD1ABG3/+lxgPA1hDgw3a0vl0sQABXRBLcMnAe0JZAIpLcfkX9YY6g75Aw94IQAuhqtwgSAxauIBKy15Mo8cCzWiMu46naI168xcmEo1kQA5/5NsaNomEkDxOIwTKYBzrFSSQUsUUAshGGe5+PN+/VrltEQGvIYJ6wOGqbKACqhkFCASyjlCS9lWwawCe084e2MXSg0QOBXGg3g+KVKAyr8WicBgnhYSEBLPG0U4PG66q0ATT7v/mGfKQfKB4zyEad4yCof8zakwX551P3CsF087pcvHKsPpStP+dJVvvaVL55fWH2DyzdkLd956/8vx6XV0bOYnOQAAAAASUVORK5CYII=">
+                
+                <img
+                        src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAMAAACdt4HsAAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAK7OHOkAAABOUExURUdwTCYmJicnJyUlJSYmJicnJyYmJiUlJS0tLSYmJiYmJigoKCUlJSUlJf7+/iUlJbm5ufHx8VtbW3h4eOTk5DIyMikpKZ+fn0VFRczMzO6Le3EAAAAOdFJOUwCON9T5YcjsFHvfU6WxjM/C1AAAAa5JREFUWMOtl+uSgyAMhRGRi1qj2Gp9/xdd7bqtFxJw0/OjM52RzyQcJBECka1crUujlCl17SorLklmORyUZzJ1tXWn1SvD2aTlBlCZOKIglr8QBf16DVFpIghpIEEGrWahIEkKSSODZGWh9Te4oBvr/cEYCrioQx2kugpQu72wBi7LbP1w8k8T0MlRVAFSAJ8yBBJIAryTcPA/ADi8gmmANYRAACug67r1JwxYQ8gxQAvwuDc9QIsB8peHgAAMngSAxA7BHwBgJAEZksEGMHgKMOdggQL4YfmHA8CKigT0YwRQBTdxA2g8DXCijgDuDxJQC40D4kZajmRJAGJWnlUKwwMYoXgAxQewUyiBpVJoHkAjRmrPGbSIkcJWnj8kBy2ODFo5fJjAHwEekMNkkeTG/foRecwiH5RZ03b9NCCNG3GvP7sN4Enc8pKzixL7rCcqRy+WfR2xCq4XC94cTHQF37crGsKvnRALfS5XIoRlJ7pnvEfBOyyPWnDfZ+FHsu+Jg5jUZA1DNIFvtHn8RpPf6vKbbX67zx84+CMPf+jij31fGDz5o+8Xhu9r4/8P6gi556iJuXoAAAAASUVORK5CYII=">
+               
+            </div>
+        </div>
+
+        </div>
+
+        <div class="footer_section">
+            콘텐츠웨이브 | 주식회사대표이사 | 이태현고객센터 1599-3709 (평일 09:00~18:00 / 점심시간 12:00~13:00 / 주말 및 공휴일 휴무)<br>
+            사업자등록번호 220-88-38020 | 호스팅서비스제공자 : 마이크로소프트 유한회사, 구글클라우드코리아 유한회사, 아마존웹서비시즈코리아 유한회사<br>
+            통신판매업 신고번호 : 제 2021-서울영등포-0585호 | 통신판매업 정보 공개 : <a
+                href="">http://www.ftc.go.kr/bizCommPop.do?wrkr_no=220-88-38020</a><br>
+            서울특별시 영등포구 여의나루로 60 포스트타워 19층 | 전자우편주소 : <a href="">helpdesk@wavve.com</a><br>
+            <br>
+            Copyright© 콘텐츠웨이브(주) All rights reserved.
+
+
+
+
+        </div>
+
+
+
+    </footer>
 
 </body>
 </html>

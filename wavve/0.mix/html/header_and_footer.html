@@ -1,15 +1,31 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ko">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="../css/ek_event_progress.css">
     <link rel="stylesheet" href="../css/header.css">
     <link rel="stylesheet" href="../css/footer.css">
+    <style>
+        /* 헤더 탑11111111 부분 */
+
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+
+        .JawHwa_section {
+            width: 100%;
+            height: 500px;
+            background-color: #1b1b1b;
+        }
+
+    </style>
 </head>
+
 <body>
-    <!-- 헤더 영역 -->
     <header>
         <div class="JawHwa-header-rap">
             <div class="JawHwa_header1">
@@ -22,9 +38,9 @@
                         <li class="JawHwa_menu-item">
                             <button type="button" class="JawHwa_button">쿠폰·코인</button>
                             <div class="JawHwa_submenu">
-                                <div><a href="./웨이브로그인.html">쿠폰 등록</a></div>
+                                <div><a href="https://www.wavve.com/member/login?referer=%2Fmy%2Fcoupon">쿠폰 등록</a></div>
                                 <div class="JawHwa_submenu-coin">
-                                    <a href="./웨이브로그인.html">코인 충전</a>
+                                    <a href="https://www.wavve.com/member/login?referer=%2Fmy%2Fcoin">코인 충전</a>
                                 </div>
                             </div>
                         </li>
@@ -39,32 +55,37 @@
 
 
 
-        <div class="JawHwa_header2">
-            <div class=" JawHwa_logo"><a href="./index.html"><img src="../img/wavveIcorn.svg"></a></div>
 
-            <div class="JawHwa_cate2">
-                <div class="JawHwa_cate-home"><a href="https://www.wavve.com/index.html">홈</a></div>
-                <div class="JawHwa-c">카테고리
-                    <ul>
-                        <li class="JawHwa-all">전체 카테고리 보기</li>
-                        <li><strong style="color: white;">추천 메뉴</strong></li>
-                        <li>드라마</li>
-                        <li>예능</li>
-                        <li>영화</li>
-                        <li>영화플러스</li>
-                        <li>해외시리즈</li>
-                        <li>프로야구</li>
-                        <li>ORIGINAL</li>
-                        <li>CLASSIC</li>
-                        <li>BIFAN</li>
-                    </ul>
-                </div>
-                <div class="JawHwa_cate2_LM"><span>LIVE</span></div>
-                <div class="JawHwa_cate2_LM"><span>MY</span></div>
+
+        <div class="JawHwa_header2">
+                <div class=" JawHwa_logo"><a href="./index.html"><img src="../img/wavveIcorn.svg"></a></div>
+
+        <div class="JawHwa_cate2">
+            <div class="JawHwa_cate-home"><a href="https://www.wavve.com/index.html">홈</a></div>
+            <div class="JawHwa-c">카테고리
+                <ul>
+                    <li class="JawHwa-all">전체 카테고리 보기</li>
+                    <li><strong style="color: white;">추천 메뉴</strong></li>
+                    <li>드라마</li>
+                    <li>예능</li>
+                    <li>영화</li>
+                    <li>영화플러스</li>
+                    <li>해외시리즈</li>
+                    <li>프로야구</li>
+                    <li>ORIGINAL</li>
+                    <li>CLASSIC</li>
+                    <li>BIFAN</li>
+                </ul>
             </div>
-            <div class="JawHwa_search-box"><a href=""><img src="https://www.wavve.com/img/icon-search-22.704db5c8.svg"
-                        alt=""></a>
-            </div>
+            <div class="JawHwa_cate2_LM"><span>LIVE</span></div>
+            <div class="JawHwa_cate2_LM"><span>MY</span></div>
+        </div>
+        <div class="JawHwa_search-box"><a href=""><img src="https://www.wavve.com/img/icon-search-22.704db5c8.svg"
+                    alt=""></a>
+        </div>
+
+
+
 
         </div>
 
@@ -72,62 +93,11 @@
 
 
     </header>
-    <div class="ek_wrap">
-        <!-- 이벤트 페이지 탑 -->
-        <section class="ek_event_top">
-            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEgAAABJCAYAAACesWDiAAAAAXNSR0IArs4c6QAAAoJJREFUeAHtmrFuE1EQRW0rUgoURUpFh5S/MIU/IUUaiuQH7BIKcMEfIJqQIuR/QuXkGygiUVEgIpqQx73rN5ZZ7ePKWF7tSnekq/GbeW935+TaUSIPBo5uEEgpzaBb6Ad0B51DQ/V03JP38gzP8hozda5XfQz0DmqKKxSLkNiDuKcp3vYKwr8eFtPd5wnPkA+gVxDdwLgonUXvU7VjuZdneJbXYNyXzvWujmEeq5FSOoyHx3oC/cr1edQjoz7PPe6ZrNUPc/0xar3PGGiRh/rrswO1U+h37k1jUKynucbeadSZseZnGWOxXu/1awxzUo2U0k/k8fowWAcMbnmTxdeMFTSewXoM8RqMk/Xr9P41BrquxkrpAfk9dAztQ8+gD1A9WGOPe7iXZ3iW8bn3QOoDYKgRdMnptgxeY1S//q7WxV+xu7ohhuNb7DX0EjqCnqBv0FfoO8Rg/QX0HCIM1m+gj8Ph8AuyoysEVg6i7bvyUF14Dji1YtPae7kLQ//PM+zVDwW5er2Ndbi4C88Q89pBQaKQDagAJsoGFCQK2YAKYKJsQEGikA2oACbKBhQkCtmACmCibEBBopANqAAmygYUJArZgApgoux/dwSJWo4/mO2gGpiNlvz3A2OjQ1tsXt6tW/ezg8QP1IAMSBAQbTvIgAQB0baDDEgQEG07yIAEAdG2gwxIEBBtO8iABAHRtoMMSBAQbTvIgAQB0baDDEgQEG07yIAEAdG2gwxIEBBtO8iABAHRtoMMSBAQbTvIgAQB0baDDEgQEG07yIAEAdG2gwxIEBBtO8iABAHRtoMMSBAQ7dU37Zv2tfkd6ab7t1WLb9U33c9vsSYqrpmACbRF4A95/A2w2JQ+SgAAAABJRU5ErkJggg==">
-            <h2>Wavve의 다양한 이벤트를 만나보세요.</h2>
-        </section>
 
-        <!-- 이벤트 페이지 메뉴 -->
-        <section class="ek_event_menu_wrap">
-            <div class="ek_event_menu_div">
-                <div class="ek_event_menu event_menu_1"> 
-                    <a class="ek_event_menu_a1" href="ek_event_progress.html"> 진행중 이벤트 </a>
-                </div>
-                <div class="ek_event_menu event_menu_2"> 
-                    <a class="ek_event_menu_a2" href="ek_event_ending.html">당첨자 발표 </a>
-                </div>
-            </div>
-        </section>
+    <div class="JawHwa_section">
 
-        <!-- 이벤트 페이지 항목 -->
-        <section class="ek_event_content_wrap">
-            <div class="ek_event_content">
-                <ul>
-                    <li>
-                        <a href="https://www.wavve.com/customer/event_view?eventId=707&prevPage=1">
-                            <div class="ek_event_content_img">
-                                <img src="https://image.wavve.com/v1/thumbnails/260_147_20_80/service30/event/2023/20230628_event_101428.webp">
-                            </div>
-                            <div class="ek_event_content_text">
-                                <span><h3><그 여름> 론칭 프로모션</h3></span>
-                                <span><strong>기간</strong> 2023-06-28 ~ 2023-07-18</span>
-                                <span class="ek_event_content_text_story"><strong>경품</strong> 원작 최은영 작가 내게 무해한 사람 도서 10명 / 오리지널 티셔츠 30명</span>
-                            </div>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="https://www.wavve.com/customer/event_view?eventId=706&prevPage=1">
-                            <div class="ek_event_content_img">
-                                <img src="https://image.wavve.com/v1/thumbnails/260_147_20_80/service30/event/2023/20230622_event_100252.webp">
-                            </div>
-                            <div class="ek_event_content_text">
-                                <span><h3><블랙워터: 어비스> 론칭 프로모션 </h3></span>
-                                <span><strong>기간</strong> 2023-06-22 ~ 2023-07-05</span>
-                                <span><strong>경품</strong> 네이버 페이 포인트 3만원 상품권 </span>
-                            </div>
-                        </a>
-                    </li>
-                </ul>
-            </div>
-            <div class="ek_event_content_btnGroup">
-                <a href="" class="ek_event_content_btn  ek_btn_click">1</a>
-            </div>
-           
-
-        </section>
     </div>
+
     <footer>
         <div class="footer_title">
 
@@ -205,6 +175,13 @@
 
     </footer>
 
+    
     <script src="../js/footer.js"></script>
+
+
+
+
+
 </body>
+
 </html>

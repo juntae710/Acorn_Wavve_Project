@@ -12,9 +12,13 @@ a{
     color: white;
     font-size: 20px;
     text-align: center;
+
     padding: 50px;
+    margin-top: 109px;
 }
-.ek_event_top img{
+
+
+.ek_event_top img{  
     width: 70px;
     height: 70px;
     margin-bottom: 8px;
@@ -27,7 +31,7 @@ a{
     border-bottom: 1px solid #2f2f2f;
 }
 .ek_event_menu_div{
-    width: 80%;
+    width: 1350px;
     margin: 0 auto;
     display: flex;
     justify-content: left;
@@ -56,7 +60,6 @@ a{
 /* 이벤트 페이지 항목 */
 .ek_event_content_wrap{
     background-color: #1b1b1b;
-    border-bottom: 1px solid #2f2f2f;            
 }
 .ek_event_content{
     width: 1350px;
