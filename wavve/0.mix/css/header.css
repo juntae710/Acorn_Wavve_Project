@@ -1,0 +1,247 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    width: 100%;
+    background-color: #1b1b1b;
+
+    z-index: 3;
+    position: fixed;
+
+
+}
+
+.JawHwa-header-rap {
+    width: 100%;
+    border-bottom: 1px solid #2f2f2f;
+}
+
+
+.JawHwa_header1 {
+    width: 1240px;
+    height: 34px;
+    background-color: #1b1b1b;
+    margin: 0 auto;
+}
+
+.JawHwa_wrap {
+    width: 1240px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.JawHwa_cate {
+    list-style: none;
+    display: flex;
+    position: absolute;
+    right: 0;
+
+
+}
+
+/*  메뉴 사이 막대 */
+
+.JawHwa_header1 ul.JawHwa_cate>li::after {
+    position: absolute;
+    top: 12px;
+    right: 0;
+    width: 1px;
+    height: 10px;
+    content: "";
+    background-color: #2f2f2f;
+}
+
+.JawHwa_header1 ul>li:last-child::after {
+    background-color: transparent;
+}
+
+.JawHwa_cate>li {
+    position: relative;
+    padding: 0 11px;
+    line-height: 32px;
+    font-size: 12px;
+
+}
+
+
+.JawHwa_header1 .JawHwa_wrap .JawHwa_cate li a {
+    text-decoration: none;
+    color: #a5a5a5;
+
+}
+
+button {
+    border: 0;
+    background-color: #1b1b1b;
+    color: #a5a5a5;
+}
+
+.JawHwa_button {
+    background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAwAAAAMCAYAAABWdVznAAAAAXNSR0IArs4c6QAAAH1JREFUKBVjYBj6gBHmhe3btzv8//9/JZBv5eXldRckvnPnTsW/f/+eZGRkDPP09DwAEoNrAHG2bt2aAaTy+fn5zX7//v3/+/fvIMVTgYqngeRBAEUDSABo0xSgTUpA5l8g/dTb2xtkCG4AVMQEtOnMtm3brgLZzLhVDl0ZANeHNOWoHfwJAAAAAElFTkSuQmCC) no-repeat bottom 2px right 0;
+    padding-right: 15px;
+    margin-right: 6px;
+
+}
+
+/* 숨김(하위)메뉴 부분 */
+
+
+.JawHwa_menu-item:hover .JawHwa_submenu {
+    display: block;
+    z-index: 21;
+}
+
+.JawHwa_submenu:hover a {
+    color: white;
+}
+
+.JawHwa_submenu {
+    display: none;
+    position: absolute;
+    background-color: #1b1b1b;
+    width: 87px;
+}
+
+.JawHwa_submenu .JawHwa_submenu-coin {
+    border-top: 1px solid #1b1b1b;
+}
+
+
+.JawHwa_submenu a {
+    color: #a5a5a5;
+    display: block;
+    padding: 10px;
+    background-color: #101010;
+    width: 77px;
+    height: 17px;
+    text-align: center;
+    margin: 0 auto;
+}
+
+
+
+
+
+
+
+
+
+
+/* 헤더 탑 22222 */
+
+.JawHwa_header2 {
+    width: 1240px;
+    height: 74px;
+    margin: 0 auto;
+    display: flex;
+    position: relative;
+    background-color: #1b1b1b;
+
+}
+
+.JawHwa_logo {
+    width: 108px;
+    height: 74px;
+
+}
+
+.JawHwa_logo img {
+    width: 108px;
+    height: 24px;
+
+    margin-top: 24px;
+}
+
+.JawHwa_cate2 {
+    width: 360px;
+    height: 74px;
+    color: #a5a5a5;
+    display: flex;
+    margin-left: 60px;
+}
+
+.JawHwa_cate-home a {
+    color: white;
+    text-decoration: none;
+    width: 80px;
+    height: 30px;
+    font-size: 20px;
+    line-height: 74px;
+    margin-left: 30px;
+}
+
+
+.JawHwa_cate2 span {
+    padding: 0px 20px;
+    text-align: center;
+    font-size: 20px;
+    line-height: 74px;
+
+}
+
+.JawHwa_cate2_LM {
+    margin-left: 20px;
+}
+
+.JawHwa_search-box {
+    width: 40px;
+    height: 40px;
+}
+
+.JawHwa-c {
+    width: 80px;
+    height: 30px;
+    font-size: 20px;
+    line-height: 74px;
+    margin-left: 40px;
+}
+
+.JawHwa-c ul {
+    display: none;
+    list-style: none;
+}
+
+.JawHwa-c li {
+    width: 200px;
+    font-size: 13px;
+    height: 22px;
+
+    background-color: #101010;
+    line-height: 34px;
+    padding: 10px;
+
+}
+
+.JawHwa-c .JawHwa-all {
+    width: 200px;
+    font-size: 13px;
+    height: 30px;
+    padding: 10px;
+    line-height: 30px;
+
+}
+
+.JawHwa-c:hover ul {
+    display: block;
+
+
+}
+
+.JawHwa_search-box {
+    position: absolute;
+    right: 0;
+    top: 12px;
+    width: 40px;
+    height: 40px;
+
+}
+
+.JawHwa_search-box img {
+    width: 22px;
+    height: 22px;
+    padding: 10px;
+
+
+}
