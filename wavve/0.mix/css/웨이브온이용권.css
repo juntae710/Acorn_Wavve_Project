@@ -9,7 +9,7 @@ header{
     position: fixed;
     width: 100%;
     background-color: #1b1b1b;
-    z-index: 99;
+    z-index: 1;
 }
 
 
@@ -18,7 +18,7 @@ header{
     background-color: #252525;
     position: fixed;
     width: 100%;
-    z-index: 99;
+    z-index: 1;
 }
 
 .yj_h1{
@@ -32,7 +32,7 @@ header{
     line-height: 36px;
     font-weight: 400;
     text-align: left;
-    z-index: 1;
+    
 }
 
 
@@ -403,6 +403,7 @@ body{
         color: #a5a5a5;
         display: flex;
         margin-left: 60px;
+        z-index: 2;
     }
 
     .JawHwa_cate-home a {
