@@ -148,6 +148,9 @@
 .footer_info_header_nav_img_on {
     width: 94px;
     height: 38px;
+    background-color: #252525;
+    border-right: 0.2px solid #101010;
+    margin-left: 1px;
 }
 
 .footer_info_header_nav_menu {
