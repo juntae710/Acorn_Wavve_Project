@@ -8,7 +8,7 @@ let currentTranslate = 0;
 
 //처음 이미지 위치 지정
 function jt_str(){
-  currentTranslate -= 8370;
+  currentTranslate -= 8470;
   jt_box.style.transform = `translateX(${currentTranslate}px)`;
 }
 jt_str()
