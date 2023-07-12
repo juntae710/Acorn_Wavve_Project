@@ -1,5 +1,5 @@
 let flag = true;
-        function btn_click(){
+        function ek_btn_click(){
             let a = document.getElementById("page_voucher_banner");
             let b = document.getElementById("page_voucher_btn");
             if(flag==true){
