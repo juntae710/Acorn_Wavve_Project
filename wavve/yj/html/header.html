@@ -1,365 +1,22 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ko">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-</head>
+    <style>
+        /* 헤더 탑11111111 부분 */
 
-<style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
 
-    *{
-        margin: 0;
-        padding: 0;
-        font-family: 'Noto Sans', sans-serif;
-    }
-
-
-
-    header {
+        header {
             width: 100%;
             background-color: #1b1b1b;
         }
-
-
-
-
-
-    .yj_section{
-        display: flex;
-        justify-content: center;
-        align-items: center; /*이동시키고 싶은 item 위에 있는 부모에 display, justify-content, align-items 전부 주기*/
-
-        background-color: #1b1b1b;
-        height: 900px;
-    }
-
-
-    .yj_loginbox{
-        display: flex;
-        justify-content: center;
-        text-align: center;  
-        width: 550px;
-        height: 750px;
-        align-items: center;
-        background-color: #252525;
-    }
-
-
-    .yj_login_member_layout{
-        width: 550px;
-        height: 680px;
-        background-color: #252525;
-    }
-
-
-
-
-    footer{
-        background-color: #1b1b1b;
-        height: 250px;
-    }
-
-
-
-    .yj_p{
-        text-align: center;
-        color: #a5a5a5;
-        font-size: 18px;
-        font-weight: 400;
-    }
-
-
-    .yj_h1{
-        margin: 0 0 40px;
-        font-size: 32px;
-        font-weight: 400;
-        color: white;
-    }
-
-
-    .yj_h2{
-        text-align: center;
-        font-weight: 400;
-        font-size: 18px;
-        color: #a5a5a5;
-        margin-bottom: 28px;
-    }
-
-
-    .yj_ul{
-        list-style-type: none;
-    }
-
-
-
-    .yj_label{
-        border: 1px solid #d9d9d9;
-        width: 15px;
-        height: 15px;
-        background-color: #a5a5a5;
-        color: #a5a5a5;
-        font-size: 13px;
-    }
-
-    
-    .yj_input_style{
-        padding-left: 20px;
-        border: none;
-        margin-bottom: 10px;
-        width: 90%;
-        font-size: 15px;
-        height: 53px;
-        color: white;
-        background-color: #2f2f2f;
-        border-radius: 5px;
-    }
-
-
-    .yj_ul_checkbox_wrap{
-        padding: 0 20px 0 15px;
-        text-align: left;
-        background-color: #252525;
-        height: 35px;
-    }
-
-    input#check_btn, input#check_btn1{
-        display:none;
-        }
-
-
-    input#check_btn + label > span, input#check_btn1 + label > span{
-        font-size: 13px;
-        color: #a5a5a5;
-        vertical-align: middle;
-        padding-left: 5px;
-        }  
-
-            /* label:before에 체크하기 전 상태 CSS */
-    input#check_btn + label:before, input#check_btn1 + label:before{
-        content:"";
-        display:inline-block;
-        width:21px;
-        height:21px;
-        border: 1px solid #a5a5a5;
-        border-radius: 4px;
-        vertical-align:middle;
-        }
-
-            
-            /* label:before에 체크 된 상태 CSS */  
-    input#check_btn:checked + label:before, input#check_btn1:checked + label:before{
-        border: 1px solid #a5a5a5;
-        background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABcAAAAXCAYAAADgKtSgAAAAAXNSR0IArs4c6QAAAO9JREFUSA1jFA78+Z+BRoCJRuaCjR01HGvoDv5gYWTE6nAGil3ekcLMcGYaK1bTKTK8J52ZIcWLmWHlgX/UNRxkcII7M0Pfmr8MXSv/Us9wZIPblmE3GGQb1mBZUMbCMLOQmYGFGdNBxBqM0/B95/8xBNsyM8wtZkGxgBSDcRq+aPc/hvLZfxi8LZjgFpBqMMhwRnylYrInE0NnKgvDw5f/GeTFGcGRhy+MQQYiAxZkDjp77vZ/DDycfxhqopkZFu36y0CKwSCz8LocZpm4AAPDyw8wHvE01tSCrp0cg0FmEGU4umXE8kcNxxpSNA0WAAXETbeav2oDAAAAAElFTkSuQmCC);
-        background-repeat: no-repeat;
-        background-position: 50%;
-        }
-
-
-                    /* label:before에 체크 된 상태 CSS */  
-    input#check_btn1 + label:before, input#check_btn1:checked + label:before{
-        content:"";
-        display:inline-block;
-        width:21px;
-        height:21px;
-        border: 1px solid #a5a5a5;
-        border-radius: 4px;
-        vertical-align:middle;
-        }
-
-
-    .btn_purple{
-        margin: 0 auto;
-        margin-top: 20px;
-        width: 90%;
-
-        background-color: #1351F9;
-        height: 60px;
-        border-radius: 30px;
-        color: white;
-        text-align: center;
-        line-height: 60px;
-    }
-
-
-    #a_tag{
-        text-decoration: none;
-        color: white;
-        margin-top: 10px;
-        background-color: #1351F9;
-        font-size: 18px;
-    }
-
-
-
-    .yj_join_find{
-
-        width: 430px;
-        height: 30px;
-        margin: 20px auto 50px;
-        background-color: #252525;
-        justify-content: center;
-    }
-
-
-
-    .yj_login_txt{
-        color: #a5a5a5;
-        text-decoration: none;
-        background-color: #252525;
-        font-size: 14px;
-        font-weight: 400;
-    }
-
-
-    .yj_li{
-        background-color: #252525;
-        display: inline-block;
-        text-align: center;
-        margin-left: 8px;
-        margin-top: 2px;
-    }
-
-
-    .yj_sns_div{
-        width: 550px;
-        height: 200px;
-    }
-
-
-    .yj_hr_p_box{
-        position: relative;
-        width: 550px;
-        height: 35px;
-    }
-
-    .yj_hr{
-        position: absolute;
-        margin: 20px 20px 0px 20px;
-        width: 500px;
-        border: 1px solid #2f2f2f;
-    }
-
-    .yj_p{
-        top: 8px;
-        left: 125px;
-        background-color: #252525;
-        width: 300px;
-        position: absolute;
-        text-align: center;
-        color: #a5a5a5;
-        font-size: 18px;
-        font-weight: 400;
-    }
-
-
-    .yj_login_sns{
-        background-color: #252525;
-        width: 364px;
-        height: 70px;
-        margin: 0 auto;
-        margin-top: 15px;
-        margin-bottom: 10px;
-
-        text-align: center;
-        margin-left: 8px;
-        margin-top: 3px;
-    }
-
-    
-
-
-    .yj_ul_center{
-        justify-content: center;
-    }
-
-
-
-    .yj_li{
-        background-color: #252525;
-        display: inline-block;
-        text-align: center;
-        margin-left: 8px;
-        margin-top: 3px;
-    }
-
-
-
-    .yj_login_each_kakao{
-        display: inline-block;
-
-
-        background-color: #ffec00;
-        width: 60px;
-        height: 60px;
-        border-radius: 100px;
-
-        margin-left: 5px;
-    }
-
-    .yj_login_t_id{
-        display: inline-block;
-
-        background-color: rgb(54, 23, 206);
-        width: 60px;
-        height: 60px;
-        border-radius: 100px;
-
-        margin-left: 5px;
-    }
-
-    .yj_login_naver_id{
-        display: inline-block;
-
-        background-color: rgb(35, 185, 9);
-        width: 60px;
-        height: 60px;
-        border-radius: 100px;
-
-        margin-left: 5px;
-    }
-
-    .yj_login_fb_id{
-        display: inline-block;
-
-        background-color: rgb(59, 89, 152);
-        width: 60px;
-        height: 60px;
-        border-radius: 100px;
-
-        margin-left: 5px;
-    }
-
-    .yj_login_apple_id{
-        display: inline-block;
-
-        background-color: white;
-        width: 60px;
-        height: 60px;
-        border-radius: 100px;
-
-
-        margin-left: 5px;
-    }
-
-    .yj_img{
-        width: 32px;
-        height: 32px;
-        margin-top: 14px;
-        background-color: transparent;
-    }
-
-
-
-    .yj_span{
-        display: flex;
-        border: 1px solid #252525;
-        background-color: #252525;
-        color: #a5a5a5;
-        font-size: 14px;
-    }
-
-
 
         .JawHwa-header-rap {
             width: 100%;
@@ -385,7 +42,6 @@
             display: flex;
             position: absolute;
             right: 0;
-
 
 
         }
@@ -442,7 +98,6 @@
             z-index: 21;
         }
 
-
         .JawHwa_submenu:hover a {
             color: white;
         }
@@ -453,7 +108,6 @@
             background-color: #1b1b1b;
             width: 87px;
         }
-
 
         .JawHwa_submenu .JawHwa_submenu-coin {
             border-top: 1px solid #1b1b1b;
@@ -849,15 +503,10 @@
             display: none;
             list-style: none;
         }
-
-
-
-
-</style>
-
+    </style>
+</head>
 
 <body>
-
     <header>
         <div class="JawHwa-header-rap">
             <div class="JawHwa_header1">
@@ -884,7 +533,7 @@
 
 
         <div class="JawHwa_header2"">
-                <div class=" JawHwa_logo""><img src="https://www.wavve.com/img/ci-wavve.5b304973.svg"></div>
+                <div class=" JawHwa_logo""><img src="wavveIcorn.svg"></div>
         <div class="JawHwa_cate2">
             <div class="JawHwa_cate-home"><a href="https://www.wavve.com/index.html">홈</a></div>
             <div class="JawHwa-c">카테고리
@@ -911,9 +560,6 @@
 
 
 
-            <div class="yj_login_member_layout">
-
-
 
         </div>
 
@@ -922,136 +568,9 @@
 
     </header>
 
+    <div class="JawHwa_section">
 
-
-    <section class="yj_section">
-
-
-
-
-
-
-        <div class="yj_loginbox">
-
-
-            <div class="yj_login_member_layout">
-
-
-                <h1 class="yj_h1">로그인</h1>
-                <h2 class="yj_h2">Wavve 계정으로 로그인</h2>
-
-
-                <ul class="yj_ul">
-                    <li><input type="text" class="yj_input_style" placeholder="이메일 주소 또는 아이디"></li>
-                    <li><input type="text" class="yj_input_style" placeholder="비밀번호"></li>
-                </ul>
-
-
-                <ul class="yj_ul yj_ul_checkbox_wrap">
-
-                    <input type="checkbox" id="check_btn"/>
-                    <label for="check_btn"><span>아이디 저장</span></label>
-    
-                    <input type="checkbox" id="check_btn1"/>
-                    <label for="check_btn1"><span>자동 로그인</span></label>
-                </ul>
-    
-
-                <a id="a_tag" href="">
-                    <div class="btn_purple">로그인</div>
-                </a>
-
-                
-                <ul class="yj_join_find">
-
-                    <li class="yj_li">
-                       <a class="yj_login_txt" href="">아이디 찾기⠀|</a>
-                    </li>
-
-                    <li class="yj_li">
-                        <a class="yj_login_txt" href="">비밀번호 재설정⠀|</a>
-                     </li>
-
-
-                     <li class="yj_li">
-                        <a class="yj_login_txt" href="">회원가입⠀</a>
-                     </li>
-
-                    
-                </ul>
-
-
-
-                <div class="yj_sns_div">
-
-
-                    <div class="yj_hr_p_box">
-                        <hr class="yj_hr">
-                        <p class="yj_p">또는 다른 서비스 계정으로 로그인</p>
-                    </div>
-
-
-                    
-
-                    <div class="yj_login_sns">
-
-                        <ul class="yj_ul_center yj_ul">
-                            <a href="https://kauth.kakao.com/oauth/authorize?client_id=30fc7e17b5c56a0ca1e861643292c203&redirect_uri=kakaojs&response_type=code&state=tnmvzmy9pr7sbvpxxtc9u&proxy=easyXDM_Kakao_8dgq8e3h5zs_provider&ka=sdk%2F1.43.1%20os%2Fjavascript%20sdk_type%2Fjavascript%20lang%2Fko-KR%20device%2FWin32%20origin%2Fhttps%253A%252F%252Fwww.wavve.com&origin=https%3A%2F%2Fwww.wavve.com">
-                            <li class="yj_login_each_kakao">
-                                    <img class="yj_img" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAERlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAA6ABAAMAAAABAAEAAKACAAQAAAABAAAAIKADAAQAAAABAAAAIAAAAACshmLzAAACTklEQVRYCe1WTUsbURR9d2bQKC6SUihESEjc9C+kVRsoBfciIrgSP3Br+zdcFIQuWlxU6EZpt1ahjIkfuFAQSZBAHBMxWhpECqVQTF7PC1rwvTeZMR0olDyYDPfOOeeeufM+wlh7tDvwjztAfuun02nr+vh4iBGlQXrCGetlnD9s8ImqyJ0ht42cbSWTq7ZtX/vR9jQwkkp1fa1UXtY5n4Vg1I8oMBWD6M2jaHR+eWfnZzNOUwODicRgvVZbhEBfM5Emz4qGaU5kHCfjhnE1MBCPD6OlH9DSDjeyrzzRL4OxsUyp9FGH1xoYiMWeArwBA6aOdN8citTAeZYtl7dkLszdHeKbY6ItBVVcqAstXO8b2nfLMcXAxfn5KOc8IeGCCJNCWxZSDOCbj8ugwGKNtmIAb/84sIKSkE5bMYAJE5Z4QYYPZDHFACZgQQYFFRPRqaylGuD8QAYFGO/KWooBLJcFGRRUbBjGW1lLMbBZLu+hVSsy8K9jok8bjpOVdRQDAtDd0zODyXgog1uN8UKO1dk5reNrDXzO5S47TPMFCDkd6T45FM+HQqF+u1Co6niue71zdfUjGYksYu2a6EYKZK1ZnehNrg7e665weGw9n790wwHjPXAyzsPInDcSCKLv+F2yiBbsk5MjL47lBbh5Lk7HPwNt/YLgANu22Fg4ilZxneHaNuPxfb//hoSgZwf6Y7EIQN8apyPejjh/hWNVWU5CrJXh2QEUfy6K475GljWZKRaV3ayVwrccTwMARtDyqWyp9O6W1L63O/BfdeA3G6OjNkWwE8gAAAAASUVORK5CYII=" alt="">
-                            </li>
-                            </a>
-                            <a href="https://auth.skt-id.co.kr/auth/authorize.do?client_id=271d4bb5-7350-4e57-8816-0895b040d793&client_secret=eyJhbGciOiJBMjU2S1ciLCJlbmMiOiJBMjU2R0NNIn0.7Mby7O4Y-JLrEx3O3npuVoSEx_FaNpPvkjGGNf81kOs8_nf6Wk67mg.lvpg1QZ1c5cdxA2O.IA7nQ0NYECCW7ISU-oUAlvbnlhTV_Mlp0BN56oCOg6pRFg91TTi5BO3u-Ww9OKIUKXSZvvs-Awm2.JKO7eku1Gen2-7vjXp-6Ug&redirect_uri=https%3A%2F%2Fwww.wavve.com%2Ftcallback.html&scope=openid&response_type=id_token%20token&state=54790&nonce=918396&client_type=WEB&service_type=14&popup_request_yn=Y&chnl_q=aHR0cHM6Ly9hdXRoLnNrdC1pZC5jby5rci9zc28vd2ViL3YxL3Nzb2xvZ291dC5kbz9jbGllbnRfaWQ9MjcxZDRiYjUtNzM1MC00ZTU3LTg4MTYtMDg5NWIwNDBkNzkzJnJlZGlyZWN0X3VyaT1odHRwcyUzQSUyRiUyRnd3dy53YXZ2ZS5jb20lMkZ0Y2FsbGJhY2suaHRtbCZjbGllbnRfdHlwZT1XRUI">
-                                <li class="yj_login_t_id">
-                                    <img class="yj_img" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAydpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDcuMS1jMDAwIDc5LmIwZjhiZTkwLCAyMDIxLzEyLzE1LTIxOjI1OjE1ICAgICAgICAiPiA8cmRmOlJERiB4bWxuczpyZGY9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkvMDIvMjItcmRmLXN5bnRheC1ucyMiPiA8cmRmOkRlc2NyaXB0aW9uIHJkZjphYm91dD0iIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtbG5zOnhtcE1NPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvbW0vIiB4bWxuczpzdFJlZj0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL3NUeXBlL1Jlc291cmNlUmVmIyIgeG1wOkNyZWF0b3JUb29sPSJBZG9iZSBQaG90b3Nob3AgMjMuMiAoTWFjaW50b3NoKSIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDo2ODU5RDg4NzlCQzMxMUVEQkU0QTgwNDcyNDE1REJGOCIgeG1wTU06RG9jdW1lbnRJRD0ieG1wLmRpZDo2ODU5RDg4ODlCQzMxMUVEQkU0QTgwNDcyNDE1REJGOCI+IDx4bXBNTTpEZXJpdmVkRnJvbSBzdFJlZjppbnN0YW5jZUlEPSJ4bXAuaWlkOjY4NTlEODg1OUJDMzExRURCRTRBODA0NzI0MTVEQkY4IiBzdFJlZjpkb2N1bWVudElEPSJ4bXAuZGlkOjY4NTlEODg2OUJDMzExRURCRTRBODA0NzI0MTVEQkY4Ii8+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBtZXRhPiA8P3hwYWNrZXQgZW5kPSJyIj8+XlloVwAAAItJREFUeNpi/P//P8NAAiaGAQajDsDmAAcg/k8jHDgaBaMOQAcsWMTeAPFGGtn3HF2AEb0kZGRkpKmP0e1jIsMATSA2HMg0oA7E54CO2ADExlQJEmRMhPqA/6hgBxBbkG0fFRyA7BB5Uh1AzWzoDsSGowXRqANGHTDqgFEHjDqAVMA42jcc8Q4ACDAAxqqX1WaZnUQAAAAASUVORK5CYII=" alt="">
-                                </li>    
-                            </a>
-                            <a href="https://nid.naver.com/nidlogin.login?oauth_token=C5gBWSCUcaGmbxlQcG&consumer_key=IMRF4m29ielhnUTZYGHL&logintp=oauth2&nurl=https%3A%2F%2Fnid.naver.com%2Foauth2.0%2Fauthorize%3Fresponse_type%3Dtoken%26state%3Dd2690558-fc43-4410-8b6f-d0032cf64541%26client_id%3DIMRF4m29ielhnUTZYGHL%26redirect_uri%3Dhttps%253A%252F%252Fwww.wavve.com%252Fmember%252Flogin_naver.html%26locale%3Dko_KR%26inapp_view%3D%26oauth_os%3D&locale=ko_KR&inapp_view=&svctype=">
-                                <li class="yj_login_naver_id">
-                                    <img class="yj_img" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAERlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAA6ABAAMAAAABAAEAAKACAAQAAAABAAAAIKADAAQAAAABAAAAIAAAAACshmLzAAABIElEQVRYCWNgGAWjITAaAoM1BP7jBr+BUmbY3A0Uv4RLGzb1IDEmXBJ4xFmAcouBFnHhUUO0FDkOABmuBsS9RNuCRyG5DgAZmQEMBS88ZhMlRYkDQBbMBTpChCibcCii1AESQHNn4TCbKGFKHQCyJBAYCglE2YZFETUcADJ2EtARCljMJyhELQfwAm1aDMTMBG1EU8CIxodzgT76D+egMq4BuW+B2BZVGD+PEQiwqSAnBP4CDYoD4s/YDCRVjBwHMAA98wBoUR6plmFTT5YDQAYBHbEASK0DsSkBZDsAamk6kH4xYA4AhsIboOVJA+YAkMVAR2wHUtPJdQSlUQCztwTIuAXjkEJTxQHAUPgGtDQGiP+QYvmo2tEQGA2BQRECAL7YYewVRr/jAAAAAElFTkSuQmCC" alt="">
-                                </li>
-                            </a>
-                            <a href="https://www.facebook.com/login.php?skip_api_login=1&api_key=1818575348440201&kid_directed_site=0&app_id=1818575348440201&signed_next=1&next=https%3A%2F%2Fwww.facebook.com%2Fv4.0%2Fdialog%2Foauth%3Fapp_id%3D1818575348440201%26cbt%3D1688908051775%26channel_url%3Dhttps%253A%252F%252Fstaticxx.facebook.com%252Fx%252Fconnect%252Fxd_arbiter%252F%253Fversion%253D46%2523cb%253Df2410118b04079%2526domain%253Dwww.wavve.com%2526is_canvas%253Dfalse%2526origin%253Dhttps%25253A%25252F%25252Fwww.wavve.com%25252Ff7cad6cf3fe2fc%2526relation%253Dopener%26client_id%3D1818575348440201%26display%3Dpopup%26domain%3Dwww.wavve.com%26e2e%3D%257B%257D%26fallback_redirect_uri%3Dhttps%253A%252F%252Fwww.wavve.com%252Fmember%252Flogin%253Freferer%253D%25252Fplayer%25252Fvod%25253Fprogramid%25253DM_T70685G%252526utm_source%25253DNA-PC%252526utm_medium%25253DBSA%252526utm_campaign%25253DMOBI_SA_MAIN_NA_BR_PC_BSA_230701%252526utm_content%25253DP_NONE_NONE_NONE_MAINTXT_BORNTOTRIP2_230701%252526n_media%25253D27758%252526n_query%25253DWAVVE%252526n_rank%25253D1%252526n_ad_group%25253Dgrp-a001-04-000000031483473%252526n_ad%25253Dnad-a001-04-000000252244335%252526n_keyword_id%25253Dnkw-a001-04-000005494350459%252526n_keyword%25253DWAVVE%252526n_campaign_type%25253D4%252526n_contract%25253Dtct-a001-04-000000000737391%252526n_ad_group_type%25253D5%252526NaPm%25253Dct%2525253Dljvg7f74%2525257Cci%2525253D0ze0003cG-Dy5qSofvnR%2525257Ctr%2525253Dbrnd%2525257Chk%2525253D544ad4eb08eefba11fd42b4e733beb4848331b20%26locale%3Dko_KR%26logger_id%3Df300438ac99aeec%26origin%3D1%26redirect_uri%3Dhttps%253A%252F%252Fstaticxx.facebook.com%252Fx%252Fconnect%252Fxd_arbiter%252F%253Fversion%253D46%2523cb%253Df43ee3a09fde54%2526domain%253Dwww.wavve.com%2526is_canvas%253Dfalse%2526origin%253Dhttps%25253A%25252F%25252Fwww.wavve.com%25252Ff7cad6cf3fe2fc%2526relation%253Dopener%2526frame%253Df23dc2e474d778%26response_type%3Dtoken%252Csigned_request%252Cgraph_domain%26scope%3Dpublic_profile%26sdk%3Djoey%26version%3Dv4.0%26ret%3Dlogin%26fbapp_pres%3D0%26tp%3Dunspecified&cancel_url=https%3A%2F%2Fstaticxx.facebook.com%2Fx%2Fconnect%2Fxd_arbiter%2F%3Fversion%3D46%23cb%3Df43ee3a09fde54%26domain%3Dwww.wavve.com%26is_canvas%3Dfalse%26origin%3Dhttps%253A%252F%252Fwww.wavve.com%252Ff7cad6cf3fe2fc%26relation%3Dopener%26frame%3Df23dc2e474d778%26error%3Daccess_denied%26error_code%3D200%26error_description%3DPermissions%2Berror%26error_reason%3Duser_denied&display=popup&locale=ko_KR&pl_dbl=0">
-                                <li class="yj_login_fb_id">
-                                    <img class="yj_img" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAERlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAA6ABAAMAAAABAAEAAKACAAQAAAABAAAAIKADAAQAAAABAAAAIAAAAACshmLzAAABFElEQVRYCWNgGAWjIUBmCPz//58RiCOB+BAQvwJidNBHjNEsxChCVwO0iREoNhuIk9HlSOUzkaoBqj4MSFNsOcgsch1QCHUI/Slg8PMC8T/0CAfy64BYAYjFoZiXJq4DGq4LxOjgCrmWkRMFbFgsu4VFjCghchxAlMHEKhpwB4DyM0EAjPB3SIpAZQd6AvsNFPuCpAbENGBkZHyEJobBJdYB/zF04hf4DpTmATrgH35l5JcDhMy9QYzlIENolQauE3IhSfLANCCGhF3RCwEgfxWSPEgtD7EWEFUZAYPzFcxAoOHICRIm/ANZDUyQGJpWUUCM3WA1ow4YDYHREBgNAaJKQrRS5SGQn44mdhuNP8odOiEAAEOuqjiSqWt+AAAAAElFTkSuQmCC" alt="">
-                            </li>
-                            </a>
-                            <a href="https://appleid.apple.com/auth/authorize?client_id=kr.co.captv.pooqV2.member&redirect_uri=https%3A%2F%2Fmember.wavve.com%2Fmobile%2Fsignup%2Fweb%2Fapple&response_type=code%20id_token&scope=email&response_mode=form_post&frame_id=e78974af-284c-4371-b12d-0758de5270ca&m=11&v=1.5.4">
-                                <li class="yj_login_apple_id">
-                                    <img class="yj_img" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAERlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAA6ABAAMAAAABAAEAAKACAAQAAAABAAAAIKADAAQAAAABAAAAIAAAAACshmLzAAABnElEQVRYCe2WSysGYRTHXZJiRZFc826ULGwtlAVFpJSFUlasKBYWPgYfwJaytsJCsbAg2YhIKWLBRiHJ5fevd2qaOPPMPBrRe+rXXM7lf57zzExTVPSPLMdaVuHoN9bUi+g9fMBG1g20IPiYF1cDC1k3sBISv+K8IssGihELVn/JeWeW4tKqhANYhFpIbFqBi9UTNA1dUAaHoNHvgawJxqEPmuEOtmEJbsHLhslWQT1gUS64tw9vX/gUq+0ZgtQ2SGZUNOn1EzU0ocRWTsY5JBUMx7+TP5FYOZ8w5ymuRpbTiitvC8KrSXPe4NPAjWcD1y7iJUZQteFzcZ25BFkN6BXysRqfZOWeQJp9D3L0BjSqkGXWBI6tRAefvrL6RJtWanjr8PUbfhdXO0EvsOsSHI1p40YwTt/jWrR4cG1twSlBO0Gg59HSMUuP4vVdvfK7TZUYp/bPp4n1mPqx7g4inlM28UBeLlbBIWAqRQP6Dow51HYOmSfyFbQdKr4JMzACsxDeKk1sEn7c9GMxAN/9YLTi64EqKFhhAn9jAp9S2e9U6ft/9QAAAABJRU5ErkJggg==" alt="">
-                            </li>
-                            </a>
-                        </ul>
-
-
-                    </div>
-
-
-                    
-                <span class="yj_span">⠀⠀*⠀SNS계정으로 간편하게 가입하여 서비스를 이용하실 수 있습니다.</span>
-                <span class="yj_span">⠀⠀⠀기존 POOQ 계정 또는 Wavve 계정과는 연동되지 않으니 이용에 참고하세요.</span>
-
-
-
-                </div>
-
-            </div>
-
-
-            </div>
-
-
-
-
-        </div>
-
-
-
-
-
-
-    </section>
-
+    </div>
 
     <footer>
         <div class="footer_title">
@@ -1080,7 +599,7 @@
             </div>
             <div class="footer_header-wrap">
             <div class="footer_info_header_imgs">
-                <div class="footer_info_header_nav_img_on"><img src="https://www.wavve.com/img/ico-footer-wavve-on.d4912b54.svg"></div>
+                <div class="footer_info_header_nav_img_on"><img src="./wevveon.svg"></div>
 
                 <div class="footer_info_header_nav_menu" onclick="toggle()"><span>사업자용 웨이브 가입</span>
                     <ul id="content">
@@ -1126,16 +645,9 @@
 
 
 
+    </footer>
 
-    </section>
-
-
-    <footer></footer>
-    
-
-    
-
-        <script>
+    <script>
         let i = true;
         function toggle() {
             let contentE = document.getElementById("content");
@@ -1147,9 +659,13 @@
                 i = true;
             }
         }
-        </script>
+    </script>
+
+
+
 
 
 
 </body>
+
 </html>
