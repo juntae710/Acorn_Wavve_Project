@@ -37,6 +37,7 @@
 .ek_page_voucher_banner{
     height: 110px;
     overflow: hidden;
+    padding: 10px;
 }
 .ek_page_voucher a img{
     width: 1024px;
@@ -53,7 +54,7 @@
     position: absolute;
     left: 50%;
     bottom: -40px;
-    
+    cursor: pointer;
 }
 
 
