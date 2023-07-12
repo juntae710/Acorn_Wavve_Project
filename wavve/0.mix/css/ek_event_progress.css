@@ -8,11 +8,13 @@ a{
 
 /* 이벤트 페이지 탑 */
 .ek_event_top{
+    
     background-color: #252525;
     color: white;
     font-size: 20px;
     text-align: center;
-    padding: 50px;
+    padding: 170px 50px 50px 50px;
+    
 }
 .ek_event_top img{
     width: 70px;
