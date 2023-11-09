@@ -10,5 +10,6 @@
 - 팀원 : 표준태(조장), 이윤정, 조은경, 허재혁, 허재화
 ## 프로젝트 설명
 - 홈화면
-|<img src="Img/Wavve.png" width="200" height="400">|<img src="Img/WavveClone.png" width="200" height="400">|
 
+|<img src="Img/Wavve.png" width="600" height="1200">|<img src="Img/WavveClone.png" width="600" height="1200">|
+|:실제 웨이브 홈페이지:|:클론 웨이브 홈페이지:|
