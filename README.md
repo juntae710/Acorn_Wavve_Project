@@ -13,4 +13,4 @@
 
 |실제 웨이브 홈페이지|클론 웨이브 홈페이지|
 |---|---|
-|<img src="Img/Wavve.png" width="450" height="800">|<img src="Img/WavveClone.png" width="500" height="800"> |
+|<img src="Img/Wavve.png" width="400" height="800">|<img src="Img/WavveClone.png" width="450" height="800"> |
