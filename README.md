@@ -15,6 +15,11 @@
 |---|---|
 |<img src="Img/Wavve.png" width="400" height="800">|<img src="Img/WavveClone.png" width="450" height="800"> |
 
+표준태: JavaScript를 통한 메인 슬라이드 자동, 클릭, 정지 기능 구현
+
+허재혁: JavaScript를 통한 서브 슬라이드 클릭시 묶음으로 이동 , 슬라이드 끝에서 멈추는 기능 구현
+
+허재화: css 기능을 사용하여 해더 영역 클론
 - 내비게이션 파트 (이윤정, 조은경, 허재화)
 
 |로그인|이용권|웨이브온|이벤트|
