@@ -25,5 +25,4 @@
 |로그인|이용권||웨이브온|이벤트|
 |---|---|---|---|---|
 |<img src="Img/login.png" width="400" height="800">|<img src="Img/이용권1-1.png" width="200" height="400">|<img src="Img/이용권1-2.png" width="200" height="400">|이미지3|이미지4|
-
 ||<img src="Img/이용권2-1.png" width="200" height="400">|<img src="Img/이용권2-2.png" width="200" height="400">|이미지3|이미지4|
